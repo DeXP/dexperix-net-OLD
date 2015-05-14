@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : About site</title>
+		<link>http://dexperix.net</link>
+		<description>This site is a DeXPeriX's Home page. This site is not actually "page", but much more. You can find near 1000 pages at this site.
+
+The aim of this site is to be maximally unique and interesting. You can find billions of sites, that dublicates content of each other. I think, they are useless. Thats why you can find only unique content at this site. 
+
+Licensed under GNU Public License version 2. You can download site <a href="../download/site-archive/"> here</a>.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+	</channel>
+</rss>

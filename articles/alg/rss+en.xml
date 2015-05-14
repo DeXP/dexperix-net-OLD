@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Articles > Algorithms > Algorithms and mathematics</title>
+		<link>http://dexperix.net</link>
+		<description>Here the articles about algorithms. Almost all the articles in detail and understand itemized. I consider not only the foundation of algorithms, but also their time, the usefulness of each.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+	</channel>
+</rss>

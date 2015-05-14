@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Алгоритмы > Алгоритмы и математика</title>
+		<link>http://dexperix.net</link>
+		<description>Здесь собраны статьи по алгоритмам. Почти все статьи подробно и понятно расписаны. Рассмотрены не только основы алгоритмов, но и время их работы, полезность каждого из них.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Структура данных бинарная куча</title>
+			<pubDate>Sun, 13 Feb 2006 00:00:00 +0300</pubDate>
+			<link>binary_heap+npi+ru.html</link>
+			<guid>binary_heap+npi+ru.html</guid>
+			<description><![CDATA[Статья об этой прекрасной структуре данных. Многие ваши программы на теорию графов работают за сложность O(N<sup>2</sup>)? И вам это не надоело? Если надоело - читайте эту статью! И сложность ваших программ уменьшится до O(N log N), что, согласитесь, очень значительно! Бинарная куча не только хорошо развивает мозги, но ещё и очень полезна на практике.
+</p><p>Исходники приведены на C++ и Delphi(Pascal).]]></description>		</item>
+		<item>
+			<title>Способы хранения графов в памяти компьютера</title>
+			<pubDate>Sun, 15 Jan 2006 00:00:00 +0300</pubDate>
+			<link>xpanenie_grafa+npi+ru.html</link>
+			<guid>xpanenie_grafa+npi+ru.html</guid>
+			<description><![CDATA[Если Вы хоть немного знакомы с теорией графов, Вам наверняка интересно, как же правильно хранить граф в памяти компьютера. В этой статье рассмотрено 4 способа, как это сделать. Также проведён полный их анализ и размышления на эту тему.]]></description>		</item>
+		<item>
+			<title>Длинная арифметика: сложение</title>
+			<pubDate>Sun, 04 Nov 2005 00:00:00 +0300</pubDate>
+			<link>long_add+npi+ru.html</link>
+			<guid>long_add+npi+ru.html</guid>
+			<description><![CDATA[Часто возникает необходимость очень точных вычислений, либо нужна работа с огромными числами. Стандартные типы Delphi имеют максимальную точность 19-20 знаков. Эта статья научит Вас, как без проблем сложить два числа с точностью до сотен тысяч знаков.]]></description>		</item>
+		<item>
+			<title>Поиск в глубину</title>
+			<pubDate>Sun, 21 Oct 2005 00:00:00 +0300</pubDate>
+			<link>graf_stack+npi+ru.html</link>
+			<guid>graf_stack+npi+ru.html</guid>
+			<description><![CDATA[статья из цикла 'Теория графов'. Рассмотрен пример использования стека в графе. Всё подробно объяснено.]]></description>		</item>
+		<item>
+			<title>Введение в рекурсию</title>
+			<pubDate>Sun, 20 Sep 2005 00:00:00 +0300</pubDate>
+			<link>rec+npi+ru.html</link>
+			<guid>rec+npi+ru.html</guid>
+			<description><![CDATA[статья об алгоритме 'рекурсия'. Алгоритм очень полезный, лёгкий и используется довольно часто.]]></description>		</item>
+	</channel>
+</rss>

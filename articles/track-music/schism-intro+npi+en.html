@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/npi.css" title="DeXPeriX Home Page" media="all"/><link rel="stylesheet" type="text/css" href="../../images/ki/articles.css" title="DeXPeriX Home Page additional" media="all" /><style type="text/css" media="all">@import "../../images/npi.css"; @import "../../images/ki/articles.css";</style><title>DeXPeriX Home Page : Articles > Track music > Introduction to the Schism Tracker</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+en.xml" type="application/rss+xml" /><script type="text/javascript" src="../../images/highlight/highlight.js"></script><script type="text/javascript">initHighlightingOnLoad('html', 'css', 'php', 'xml', 'delphi', 'cpp', 'sql', 'bash');</script></head><body><div id="header"><div id="top"><h1></h1><div id="translate"><ul id="lan"><li class="ru"><a href="schism-intro+npi+ru.html" title="ru"><img src="../../images/ki/ru.gif"></a></li><li class="en"><a href="schism-intro+npi+en.html" title="en"><img src="../../images/ki/en.gif"></a></li><li id="ukazatel" class="clearer"></li><li></li></ul> </div><span>Linux, Hacking, Sources, News, Free Software, Photo and more...</span></div></div><div id="area"><ul id="menu"><li class="News"><a href="../../news/index+npi+en.html" title="News"><img src="../../images/ki/home.jpg" alt="News" /></a></li><li><a href="../../articles/index+npi+en.html" id="m2en" title="Articles"></a></li><li><a href="../../sources/index+npi+en.html" id="m3en" title="Sources"></a></li><li><a href="../../soft/index+npi+en.html" id="m4en" title="Software"></a></li><li><a href="../../projects/index+npi+en.html" id="m5en" title="Projects"></a></li><li><a href="../../tranlations/index+npi+en.html" id="m6en" title="Translations"></a></li><li><a href="../../photo/index+npi+en.html" id="m7en" title="Photoalbum"></a></li><li><a href="../../about-site/index+npi+en.html" id="m8en" title="About"></a></li><li id="search"><form id="form" action="http://www.google.com/cse" method="get" name="lse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:kitqivs-32w" /><input type="hidden" name="ie" value="UTF-8" /><input class="text" type="text" name="q" value=""/><input class="sub" type="submit" value="" name="sa"></form></li></ul><div id="content"><div id="bg_right"><div id="topic"><div id="line"></div><h2>Introduction to the Schism Tracker</h2> <div id="topic-list"><div id="contdata"><p>Schism Tracker is a free reimplementation of Impulse Tracker, a program used to create high quality music without the requirements of specialized, expensive equipment, and with a unique "finger feel" that is difficult to replicate in-part. The player is based on the Modplug engine, with a number of changes to improve IT playback.
+</p><p>Where Impulse Tracker was limited to i386-based systems running MS-DOS, Schism Tracker runs on almost any platform that SDL supports, and has been successfully built on Linux, Mac OS X, Windows, FreeBSD, AmigaOS, and BeOS.
+</p><p>So, Schism Tracker will show to you such window at first run:
+</p><p><span class="centered"><img src="../../images/schi/s01.png" height="400" width="640" alt="Schism : First run" title="Schism : First run" /></span>
+</p><p>This window is unclear for Beginners: program ostensibly offers load the file, although you want to create a new. In fact, the new empty project is already open.
+</p><p>It is a very important detail that makes navigation in the editor convenient - all the windows needed to work, caused by using the function keys 'F1' - 'F12'.
+	
+<span class="centered"><img src="../../images/schi/s02.png" height="400" width="640" alt="Schism : Patterns editor" title="Schism : Patterns editor" /></span>
+</p><p>For example, you can call the patterns editor by pressing 'F2' key  - notably in this the musician spends most of his time. Since the project is empty,patterns  editor doesn't have any data yet. For example, if you press the 'Q' key, then the editor added "C-5 01". That means roughly as follows: play an instrument No. 1 note with the parameters "C-5".
+</p><p>But when you try to play the melody, no sound will be, because there is no instrument. The tracker is simply does not know how to play this note. The instrument is tentatively need to create.
+</p><p>Sample - a small piece of digital instrument, voice or other sound effects. Most tracker allows looping of the sample, simulating a note by an extended sound. To view a list of samples in Schism Tracker use the 'F3' key:
+	
+<span class="centered"><img src="../../images/schi/s03.png" height="400" width="640" alt="Schism : Samples List" title="Schism : Samples List" /></span>
+</p><p>Schism Tracker have not a library of samples or instruments. Create them in Schism Tracker also impossible. We need to import already finished, such as WAV-Files. They are easily searched in the search engines for "music samples download". Or you can take samples of any tracker with its library of samples. For example, MadTracker. A set of simple samples from MadTracker can take <a href="http://www.dexperix.net/download/files/Simple.zip" target="blank">here</a>.
+<span class="centered"><img src="../../images/schi/s05.png" height="400" width="640" alt="Schism : Samples List - Create Host Instrument" title="Schism : Samples List - Create Host Instrument" /></span>
+	
+By default, all samples are inactive, and the "play" button is dark red. To load a sample from the file you just need to press the 'Enter' and select the file.
+</p><p>When you add a sample Schism Tracker automatically ask whether to create an instrument that matches this sample. You need to answer affirmatively.
+</p><p>After adding a sample to instrument list ('F4'), this list look something like this:
+	
+<span class="centered"><img src="../../images/schi/s06.png" height="400" width="640" alt="Schism : Instrument List" title="Schism : Instrument List" /></span>
+</p><p>Now you can begin to write the melody itself. It is the patterns editor ('F2').
+</p><p><span class="centered"><img src="../../images/schi/s07.png" height="400" width="640" alt="Schism : Patterns editor" title="Schism : Patterns editor" /></span>
+</p><p>Notes recruited at the main keyboard. Try and understand everything! <img src="../../images/smilies/smile.png" align="top" height="20" width="20" title=":)" alt=":)" /> Indeed, the uniqueness of the proposed sponsored tracker technique is that with it you can make your songs, just listening as the sounds of a instrument, and choose the appropriate sound.
+</p><p>For example, a Russian national song "In the forest was born herringbone" for Schism Tracker might look something like this:
+	
+<span class="centered"><img src="../../images/schi/elochka-en.png" height="657" width="259" alt="V lesu rodilas elochka" title="V lesu rodilas elochka" /></span>
+</p><p>When you work on the melody used large quantities hotkeys. The combination of 'Ctrl' + 'BackSpace' discard all changes in the composition (feature total undo), 'Alt' + 'BackSpace' Undo the last change (function undo), and when you click '+' or '-' will change the current pattern. If you want to replace the wrong note - just hover your cursor on it and enter the correct note. The current cursor position should be cleaned using '.'. 'Del' is not only atonement for the current position, but also raise all the values on one line up. Editor's options can be accessed by pressing 'F2', a pattern options - 'Ctrl' + 'F2'. Play this pattern may be using key 'F6'.
+	
+<span class="centered"><img src="../../images/schi/s08.png" height="400" width="640" alt="Schism : Main menu" title="Schism : Main menu" /></span>
+</p><p>The track can be saved by the main menu ('Esc'), it choose 'File menu' - 'Save current'. Or you can just press 'F10'. This will open a window similar to the one we saw at startup:
+	
+<span class="centered"><img src="../../images/schi/s09.png" height="400" width="640" alt="Schism : Save dialog" title="Schism : Save dialog" /></span>
+</p><p>Here, you will need to enter a file name, select its type (Schism can do type selection automatically).
+</p><p>Then you can select song variables: the title, the playback speed, tempo and stuff. Call window of song variables can be by key 'F12':
+	
+<span class="centered"><img src="../../images/schi/s10.png" height="400" width="640" alt="Schism : Song variables" title="Schism : Song variables" /></span>
+</p><p>But even after the current action, our work does not want to play on the key 'F5'. This is because the composition may consist of several patterns and tracker should know in what order they play. Set the order could be on the list of planning ('F11').
+	
+<span class="centered"><img src="../../images/schi/s11.png" height="400" width="640" alt="Schism : List of planning" title="Schism : List of planning" /></span>
+</p><p>By the way, to save the current progress you can use a standard hotkey 'Ctrl' + 'S'. Save often!
+</p><p>So now any player can play your song. Schism Tracker will also be able to reproduce it in full length:
+</p><p><span class="centered"><img src="../../images/schi/s99.png" height="400" width="640" alt="Schism : Playing" title="Schism : Playing" /></span>
+</p></div><br /><p class="plink"><a href="schism-intro+en.pdf">Download in PDF format</a> (291.5 kB)</p><div id="contdata"><h2 id="commentsform">Leave Comment</h2><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="343" /><input type="hidden" name="uid" value="3170" />Nickname:</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Your nick or real name. Will be shown in comment's header )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Your e-mail. Used for connection with administration. Will NOT be shown )</small></td></tr><tr><td>Site, ICQ or Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( This field wil be shown in comment's header near your name )</small></td></tr><tr><td>Mark:</td><td><select name="rathing" size="1"><option value="0" selected="selected">No mark</option><option value="1">Terrible</option><option value="2">Bad</option><option value="3">Normal</option><option value="4">Good</option><option value="5">Excellent</option></select></td></tr><tr><td colspan="2"><small>( How do you evaluate the material? By default assessment does not put )</small></td></tr><tr><td colspan="2">Insert integer, shown on picture <img src="http://dexperix.net/scripts/image.php?id=343" width="90" height="30" align="middle" class="captcha" alt="Image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Comment's Text:</td></tr><tr><td colspan="2" align="center"><textarea name="text"></textarea><br /><input type="submit" value="Send comment" /></td></tr></table></form></div><div id="reklama"><!--ADVERT_TEMPLATE--></div></div> </div><div id="topic_left"><div id="line_l"></div><div id="info_left"><h3>Language</h3><ul id="l_info"><li><a href="schism-intro+npi+ru.html">:: Русский</a></li><li><a href="schism-intro+npi+en.html">:: English</a></li></ul><h3>Design</h3><ul id="l_info"><li><a href="schism-intro+blp+en.html">:: Black Purple</a></li><li><a href="schism-intro+gray+en.html">:: Gray Text</a></li><li><a href="schism-intro+npi+en.html">:: New Pictures</a></li></ul><h3>Friends</h3><ul id="l_info"><li><a href="http://coderszone.info" target="_blank">:: CodersZone.Info</a></li></ul><h3>Counters</h3><ul id="l_info"><li><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--></li><li><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</li></ul></div></div></div><div id="paw"></div></div><div id="add_menu"><ul id="menu_right"><li><a href="../alg/index+npi+en.html" id="algen" title="Algorithms"></a></li><li><a href="../linux/index+npi+en.html" id="linuxen" title="Linux"></a></li><li><a href="../delphi/index+npi+en.html" id="delphien" title="Delphi"></a></li><li><a href="../php/index+npi+en.html" id="phpen" title="PHP Coding"></a></li><li><a href="../hack/index+npi+en.html" id="hacken" title="Hacking"></a></li><li><a href="../track-music/index+npi+en.html" id="track-musicen" title="Track music"></a></li><li><a href="../diz/index+npi+en.html" id="dizen" title="Design"></a></li><li><a href="../instr/index+npi+en.html" id="instren" title="Instructions"></a></li><li><a href="../other/index+npi+en.html" id="otheren" title="Other"></a></li></ul></div></div><div id="bottom"><div id="footer"><ul id="f_left"><li class="ukz"></li><li class="copyright">Copyright &copy; <span>2005-2009</span> by  <a href="http://dexperix.net">DeXPeriX</a></li></ul><ul id="f_right"><li class="icq">606 - 986</li><li class="jabber"><a>root<span>@</span>dexp.in</a></li></ul></div></div></body></html>

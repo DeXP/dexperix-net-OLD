@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Дизайн</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи по дизайну, веб-дизайну, редизайну и т.д. Здесь же расположены уроки Photoshop, GIMP и т.д.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Где взять идеи или снова о дизайне</title>
+			<pubDate>Sun, 18 Aug 2006 00:00:00 +0300</pubDate>
+			<link>new_ideas+npi+ru.html</link>
+			<guid>new_ideas+npi+ru.html</guid>
+			<description><![CDATA[У многих дизайнеров в жизни бывает такое период, когда идеи "заканчиваются". Т.е. хочется создать что-то новое, уникальное, но мыслей как это сделать почти нет. Конечно, что-то шаблонное, серенькое любой человек может сделать как только захочет. Но лично вам не надоели сайты, как две капли воды похожие друг на друга? Нужно СОЗДАВАТЬ что-нибудь новое, красивое, уникальное.]]></description>		</item>
+	</channel>
+</rss>

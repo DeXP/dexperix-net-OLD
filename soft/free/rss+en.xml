@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Software > Free Software</title>
+		<link>http://dexperix.net</link>
+		<description>Here you will be able to download all my free and non-profit program. Basically they were written for oun use or for the practice of programming. However, some programs may well cause you concern.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>VerEn - Vertex Engine</title>
+			<pubDate>Sun, 04 Apr 2009 00:00:00 +0300</pubDate>
+			<link>vertex-engine+npi+en.html</link>
+			<guid>vertex-engine+npi+en.html</guid>
+			<description><![CDATA[Vertex Engine - a small OpenGL application for visualization of material mechanics. Application not completed and is of interest only as a symbiosis of OpenGL, SDL, guichan and other libraries in vivo example.
+</p><p>	
+Application completely cross platform. The archive contains the source code, executables for Windows and Linux, a presentation in Russian.
+</p><p>Used libraries: OpenGL, SDL, guichan, libxml2, libpng]]></description>		</item>
+		<item>
+			<title>dxMemMen</title>
+			<pubDate>Sun, 15 Sep 2008 00:00:00 +0300</pubDate>
+			<link>dxmemmen+npi+en.html</link>
+			<guid>dxmemmen+npi+en.html</guid>
+			<description><![CDATA[dx Memory Manager is a programm, that emulates work of operation system memory manager
+</p><p>Interface is only in english
+</p><p>Released algorithms:
+</p><p>- First fit
+</p><p>- Worst fit
+</p><p>- Best fit]]></description>		</item>
+		<item>
+			<title>dxPlanner</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>dxplanner+npi+en.html</link>
+			<guid>dxplanner+npi+en.html</guid>
+			<description><![CDATA[dxPlanner is a software, that simulates the operation system processes planner.
+It was initially created as laboratory work at Gomel State Technical University
+named after aircraft designer Pavel Sukhoi.
+</p><p>Released algorithms:
+</p><p>- First Come First Serve
+</p><p>- Priority Round Robbin
+</p><p>- Non priority Round Robbin
+</p><p>- Shortest Job First
+</p><p>Have only english user interface]]></description>		</item>
+		<item>
+			<title>EasyHider v 1.0</title>
+			<pubDate>Sun, 31 Aug 2006 00:00:00 +0300</pubDate>
+			<link>EasyHider+npi+en.html</link>
+			<guid>EasyHider+npi+en.html</guid>
+			<description><![CDATA[Application from the category of "trifles to facilitate our lives." Quite often the task bar stoned "unnecessary" applications. That is, they are certainly needed, but should hang in the background, rather than on the task bar and should simply not interfere with the user. This program allows you to hide / show any application. The program also requires no installation]]></description>		</item>
+		<item>
+			<title>OpenSource Tester v 1.0</title>
+			<pubDate>Sun, 06 Dec 2005 00:00:00 +0300</pubDate>
+			<link>OpenTester+npi+en.html</link>
+			<guid>OpenTester+npi+en.html</guid>
+			<description><![CDATA[Test system with the source. Questions with answers are stored in INI-file. To pass for passing the test program said the number of right and wrong answers, as well as the percentage ratio.]]></description>		</item>
+		<item>
+			<title>HHAutorunMake</title>
+			<pubDate>Sun, 28 Aug 2005 00:00:00 +0300</pubDate>
+			<link>HHAutorunMake+npi+en.html</link>
+			<guid>HHAutorunMake+npi+en.html</guid>
+			<description><![CDATA[Sometimes you want to do compact disk autorun using HTML pages, but not using a web browser by default (because it needs a unique, beautiful design, or a powerful soundtrack). If there is no time to write their programs, or you reluctant to choose a beautiful and comfortable design - that this program for you.
+</p><p>The program is user-friendly interface and built-Media, Opportunity close to Winamp 'bathroom. Possible settings: changing icons and applications on behalf of the task bar, changing the initial pages, fully customizable interface language, changing the order of the buttons on the main panel, the pronunciation of basic voice commands (runs on Windows NT, 2k, XP, Win9x with SAPI SDK), setting Media (just see default.dtp file). It is also possible to search phrases on the current page and use the clipboard.]]></description>		</item>
+		<item>
+			<title>Calculator for Windows</title>
+			<pubDate>Sun, 02 Mar 2005 00:00:00 +0300</pubDate>
+			<link>CalcForWindows+npi+en.html</link>
+			<guid>CalcForWindows+npi+en.html</guid>
+			<description><![CDATA[Normal engineering calculator. Unlike standard Windows calculator has a pleasant appearance and a more convenient system to work with trigonometry.]]></description>		</item>
+	</channel>
+</rss>

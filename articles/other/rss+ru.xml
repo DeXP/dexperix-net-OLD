@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Другие</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи, не попавшие в другие разделы. Это редко статьи по программированию, но всё-равно они чаще всего как-то связаны с компьютером.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Какое место в культуре информационно-компьютерной цивилизации отводится человеку как личности?</title>
+			<pubDate>Sun, 05 Jul 2006 00:00:00 +0300</pubDate>
+			<link>lichnost+npi+ru.html</link>
+			<guid>lichnost+npi+ru.html</guid>
+			<description><![CDATA[Всякие люди (типа учителя-лингвисты :) ) уже задолбали своими высказываниями типа: "Компьютер зомбирует вас", "Вы всего лишь придатки машины","Вы не живете как личности!". В этой статье я попытался доказать обратное.
+</p><p>Хоть этот набросок и имеет маленький размер, я попытался выразить то, что на душе наболело :) Это персонально моё мнение и не призываю никого быть согласным только со мной.]]></description>		</item>
+	</channel>
+</rss>

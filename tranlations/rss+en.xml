@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Translations</title>
+		<link>http://dexperix.net</link>
+		<description>Here are the translations of articles, programs, help pages, etc.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Russian translation of Ario player</title>
+			<pubDate>Sun, 05 May 2008 00:00:00 +0300</pubDate>
+			<link>ario-rus+npi+en.html</link>
+			<guid>ario-rus+npi+en.html</guid>
+			<description><![CDATA[Ario (<a href="http://ario-player.sourceforge.net/" target="blank">http://ario-player.sourceforge.net/</a>) is a GTK2 client for MPD (Music player daemon). The interface used to browse the library is inspired by Rhythmbox but Ario aims to be much lighter and faster.
+</p><p>It runs on Linux and Microsoft Windows.]]></description>		</item>
+		<item>
+			<title>BitDefender 9 rusificator</title>
+			<pubDate>Sun, 31 Oct 2006 00:00:00 +0300</pubDate>
+			<link>bitdefender-9-rus+npi+en.html</link>
+			<guid>bitdefender-9-rus+npi+en.html</guid>
+			<description><![CDATA[Translation to russian of BitDefender 9 - BitDefender 9 Russification. This translation completely written by me and unique. At this site you can always find its latest version. Comments and suggestions write to feedback.]]></description>		</item>
+		<item>
+			<title>BitDefender 8.0 rusificator</title>
+			<pubDate>Sun, 20 Jul 2005 00:00:00 +0300</pubDate>
+			<link>bitdefender-8-rus+npi+en.html</link>
+			<guid>bitdefender-8-rus+npi+en.html</guid>
+			<description><![CDATA[Translator BitDefender 8.0 antivirus to russian language.
+</p><p>Collected from several, but he did not truncate functionality, better than other translations.]]></description>		</item>
+	</channel>
+</rss>

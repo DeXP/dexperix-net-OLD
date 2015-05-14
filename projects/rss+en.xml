@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Projects</title>
+		<link>http://dexperix.net</link>
+		<description>Here you will find a complete list of my projects, as well as a full description of each.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Ario-player.sf.net</title>
+			<pubDate>Sun, 23 May 2008 00:00:00 +0300</pubDate>
+			<link>ario-player-sf-net+npi+en.html</link>
+			<guid>ario-player-sf-net+npi+en.html</guid>
+			<description><![CDATA[	
+The site of Ario player.
+</p><p>Design, HTML coding, the first engine: Marc Pavot
+</p><p>The current site engine, news engine, RSS support, multilanguaging made by me in PHP. Also I am doing maintaining of this site]]></description>		</item>
+		<item>
+			<title>Mofars.com</title>
+			<pubDate>Sun, 10 Aug 2006 00:00:00 +0300</pubDate>
+			<link>mofaks+npi+en.html</link>
+			<guid>mofaks+npi+en.html</guid>
+			<description><![CDATA[Gomel Online rental compact discs with delivery at home.
+</p><p>Used technologies: PHP, MySQL, Smarty, JavaScript, CSS, HTML]]></description>		</item>
+	</channel>
+</rss>

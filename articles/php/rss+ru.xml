@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > PHP кодинг</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи по программированию на языке PHP. В основном, это статьи для начинающих.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Создание сменного дизайна средствами PHP (cookies метод)</title>
+			<pubDate>Sun, 23 Mar 2006 00:00:00 +0300</pubDate>
+			<link>changeble_design+npi+ru.html</link>
+			<guid>changeble_design+npi+ru.html</guid>
+			<description><![CDATA[На многих сайтах можно видеть окошко выбора дизайна. Так пользователь может сам выбрать внешний вид, который ему по душе. Согласитесь, это довольно удобно. Сегодня и мы реализуем эту возможность!]]></description>		</item>
+	</channel>
+</rss>

@@ -1,0 +1,29 @@
+#menu_right a{ width:25px; display:block; }
+#menu_right a#univeren{ height:83px; display:block; background:url(m_univer_en.png) left top no-repeat; }
+#menu_right a#univeren:hover { background-position:right; }
+#menu_right a#univerru{ height:57px; display:block; background:url(m_univer_ru.png) left top no-repeat; }
+#menu_right a#univerru:hover { background-position:right; }
+#menu_right a#mozyr2007en{ height:83px; display:block; background:url(m_mozyr2007_en.png) left top no-repeat; }
+#menu_right a#mozyr2007en:hover { background-position:right; }
+#menu_right a#mozyr2007ru{ height:83px; display:block; background:url(m_mozyr2007_ru.png) left top no-repeat; }
+#menu_right a#mozyr2007ru:hover { background-position:right; }
+#menu_right a#gstu2008en{ height:83px; display:block; background:url(m_gstu2008_en.png) left top no-repeat; }
+#menu_right a#gstu2008en:hover { background-position:right; }
+#menu_right a#gstu2008ru{ height:83px; display:block; background:url(m_gstu2008_ru.png) left top no-repeat; }
+#menu_right a#gstu2008ru:hover { background-position:right; }
+#menu_right a#JeepTrial2008en{ height:83px; display:block; background:url(m_JeepTrial2008_en.png) left top no-repeat; }
+#menu_right a#JeepTrial2008en:hover { background-position:right; }
+#menu_right a#JeepTrial2008ru{ height:83px; display:block; background:url(m_JeepTrial2008_ru.png) left top no-repeat; }
+#menu_right a#JeepTrial2008ru:hover { background-position:right; }
+#menu_right a#driveen{ height:57px; display:block; background:url(m_drive_en.png) left top no-repeat; }
+#menu_right a#driveen:hover { background-position:right; }
+#menu_right a#driveru{ height:57px; display:block; background:url(m_drive_ru.png) left top no-repeat; }
+#menu_right a#driveru:hover { background-position:right; }
+#menu_right a#sea2008en{ height:83px; display:block; background:url(m_sea2008_en.png) left top no-repeat; }
+#menu_right a#sea2008en:hover { background-position:right; }
+#menu_right a#sea2008ru{ height:83px; display:block; background:url(m_sea2008_ru.png) left top no-repeat; }
+#menu_right a#sea2008ru:hover { background-position:right; }
+#menu_right a#otheren{ height:57px; display:block; background:url(m_other_en.png) left top no-repeat; }
+#menu_right a#otheren:hover { background-position:right; }
+#menu_right a#otherru{ height:57px; display:block; background:url(m_other_ru.png) left top no-repeat; }
+#menu_right a#otherru:hover { background-position:right; }

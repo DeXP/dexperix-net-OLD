@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Software > Shareware</title>
+		<link>http://dexperix.net</link>
+		<description>Most of the time they were made to order. Here are mainly demo versions of these programs.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>ATest</title>
+			<pubDate>Sun, 26 Aug 2005 00:00:00 +0300</pubDate>
+			<link>ATest+npi+en.html</link>
+			<guid>ATest+npi+en.html</guid>
+			<description><![CDATA[A program to build tests from the database. The database has a specific format - stored in a Word document in tabular form. From this base you need to generate test in the form in which it is accustomed to see students. The sample is being customized for specific rules]]></description>		</item>
+		<item>
+			<title>RCT</title>
+			<pubDate>Sun, 12 Feb 2005 00:00:00 +0300</pubDate>
+			<link>rct+npi+en.html</link>
+			<guid>rct+npi+en.html</guid>
+			<description><![CDATA[Gomel Regional Center of Testing - program to automate Centralized Testing. Able to work with scanned paper, check to the statistics. It has a pleasant and friendly interface. A large number of settings.]]></description>		</item>
+	</channel>
+</rss>

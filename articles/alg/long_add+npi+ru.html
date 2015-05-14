@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/npi.css" title="DeXPeriX Home Page" media="all"/><link rel="stylesheet" type="text/css" href="../../images/ki/articles.css" title="DeXPeriX Home Page additional" media="all" /><style type="text/css" media="all">@import "../../images/npi.css"; @import "../../images/ki/articles.css";</style><title>DeXPeriX Home Page : Статьи > Алгоритмы > Длинная арифметика: сложение</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+ru.xml" type="application/rss+xml" /><script type="text/javascript" src="../../images/highlight/highlight.js"></script><script type="text/javascript">initHighlightingOnLoad('html', 'css', 'php', 'xml', 'delphi', 'cpp', 'sql', 'bash');</script></head><body><div id="header"><div id="top"><h1></h1><div id="translate"><ul id="lan"><li class="ru"><a href="long_add+npi+ru.html" title="ru"><img src="../../images/ki/ru.gif"></a></li><li id="ukazatel" class="clearer"></li><li></li></ul> </div><span>Linux, Hacking, Sources, News, Free Software, Photo and more...</span></div></div><div id="area"><ul id="menu"><li class="Новости"><a href="../../news/index+npi+ru.html" title="Новости"><img src="../../images/ki/home.jpg" alt="Новости" /></a></li><li><a href="../../blog/index+npi+ru.html" id="m1ru" title="Блог"></a></li><li><a href="../../articles/index+npi+ru.html" id="m2ru" title="Статьи"></a></li><li><a href="../../sources/index+npi+ru.html" id="m3ru" title="Исходники"></a></li><li><a href="../../soft/index+npi+ru.html" id="m4ru" title="Программы"></a></li><li><a href="../../projects/index+npi+ru.html" id="m5ru" title="Проекты"></a></li><li><a href="../../tranlations/index+npi+ru.html" id="m6ru" title="Переводы"></a></li><li><a href="../../photo/index+npi+ru.html" id="m7ru" title="Фотоальбом"></a></li><li id="search"><form id="form" action="http://www.google.com/cse" method="get" name="lse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:x64p4f5z3o8" /><input type="hidden" name="ie" value="UTF-8" /><input class="text" type="text" name="q" value=""/><input class="sub" type="submit" value="" name="sa"></form></li></ul><div id="content"><div id="bg_right"><div id="topic"><div id="line"></div><h2>Длинная арифметика: сложение</h2> <div id="topic-list"><div id="contdata"><p>Итак, сегодня мы напишем длинное сложение. Так что же это такое и для чего это нужно?
+</p><p>Довольно часто нужно работать с очень большими числами (до 10000 знаков). Ни один стандртный тип Delphi не может "вместить" в себя такое огромное число, что уж говорить про Turbo Pascal. В таких случаях на помощь приходит длинная арифметика.
+</p><p>Если Delphi не может сложить два больших числа, то это ещё не значит, что это не может сделать человек. Например, нужно посчитать сумму: 9223372036854775817 + 14685537510068352681. Эти числа не помещаются ни в int64, ни в extended. Точнее, extended может хранить только 19-20 значащих знаков, всё остальное округляется - потеря точности. Тем не менее, мы можем взять бумажку и сложить эти два числа в столбик:
+</p><p><center>
+<table border=0>
+<tr>
+<td valign=center>
++
+</td>
+<td align="right">
+9223372036854775817<br>
+14685537510068352681<br>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<hr>
+23908909546923128498
+</td>
+</tr>
+</table>
+</center>
+</p><p>Ничего сложного! А почему бы не научить компьютер делать то же самое? Научим!
+</p><p>Первый вопрос, который приходит в голову: "А где же хранить такие огромные числа?" А хранить их можно либо в массиве, либо в строке. И там и там есть свои плюсы и минусы: строки удобно использовать, т.к. все элементы ввода возвращают строки (Edit1.Text, Memo1.Lines[0] и т.д.), но скорость работы со строками очень мала и длина типа string ограничена - 255 символов; в массивах не очень удобно учитывать длину числа, нужно постоянно при получении строки конвертировать  в массив, но с массивом можно работать намного быстрее и длина массива может быть больше. Вариант с массивом всё-таки предпочтительнее: длинная арифметика нужна там, где числа действительно большие, чем больше числа, тем дольше считать результат. Да и писать код работы с массивом намного проще.
+</p><p>Теперь перейдём непосредственно к алгоритму. Как мы считаем столбик: начинаем с конца и складываем по одному знаку. Если получившаяся сумма меньше 10 - то записываем её в соответствующую клетку ответа. Если же сумма больше либо равна 10, то разряд единиц пишем в соответствующую клетку ответа, а разряд десятков (заметьте, он может быть равен только 1) прибавляем к следующему ответу (т.е. переносим эту единицу левее). Также может получиться такая ситуация, когда при сложении двух чисел длиной n мы получаем число длиной n+1 (например 80+41=121). При сложении на бумажке мы этого не замечаем, однако этот аспект есть.
+</p><p>Ну вот мы и рассмотрели всем с детства знакомый алгоритм <img src="../../images/smilies/smile.png" align="top" height="20" width="20" title=":)" alt=":)" />. Хранить числа в массивах прям так, как мы их видим на бумажке не очень удобно - длина чисел может быть разной, проще всего просто напросто развернуть наши числа и делать всё наоборот: начинать с первого символа и при получении результата больше 10 переносить 1 вправо :
+</p><p><center>
+<table border=0>
+<tr>
+<td valign=center>
+7185774586302733229<br>
+18625386001573558641<br>
+</td>
+<td>
++
+</td>
+</tr>
+<tr>
+<td>
+<hr>
+89482132964590980932
+</td>
+<td>
+</td>
+</tr>
+</table>
+</center>
+</p><p>Заметьте, если перевернуть наш ответ, то он будет равен ответу из 1 примера. Хоть и этот метод и кажется немного сложнее, но запрограммировать его намного проще...
+</p><p>Теперь обратимся непосредственно к реализации:
+\code}
+</p><p><i>a</i> и <i>b</i> - массивы, которые мы будем складывать, а <i>na</i> и <i>nb</i> - их длины. <i>с</i> - результирующий массив, <i>nc</i> - его длина. Нулевой элемент в массивах предназначен для хранения знака числа. Пускай там стоит 0, если число положительное, и 1 - если число отрицательное. Теперь нам нужно научить нашу программу считывать такие массивы с экрана и разворачивать их:
+</p><p>\code}
+</p><p>Ну вот и всё. Теперь можно приступать к написанию самой процедуры сложения.<br> Правильнее всего для хранения единички, переходящей в следующий разряд, завести отдельную переменную - смещение. Так мы и сделаем:
+</p><p>\code}
+</p><p>Ну вот мы и рассмотрели целочисленное длинное сложение. Пока наше сложение умеет работать только с положительными числами, однако позже (после изучения длинного вычитания) мы модифицируем его. Процедуру чтения мы сразу сделали полнофункциональной - для целочисленной арифметики большего не нужно и изменять мы её не будем.
+</p><p>Надеюсь, эта статья хоть каплю помогла Вам разобраться в огромном океане алгоритмов...</p></div><div id="contdata"><h2 id="commentsform">Оставить комментарий</h2><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="20" /><input type="hidden" name="uid" value="39" />Имя (ник):</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш ник или реальное имя. Будет показано в заголовке комментария )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш e-mail. Используется только для связи с Вами администрации. Показан НЕ будет )</small></td></tr><tr><td>Сайт, ICQ или Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Это поле будет отображено в заголовке комментария рядом с Вашим именем )</small></td></tr><tr><td>Ваша оценка:</td><td><select name="rathing" size="1"><option value="0" selected="selected">Нет оценки</option><option value="1">Ужасно</option><option value="2">Плохо</option><option value="3">Нормально</option><option value="4">Хорошо</option><option value="5">Отлично</option></select></td></tr><tr><td colspan="2"><small>( Как Вы оцениваете данный материал? По умолчанию оценка не ставится )</small></td></tr><tr><td colspan="2">Введите число, изображённое на картинке <img src="http://dexperix.net/scripts/image.php?id=20" width="90" height="30" align="middle" class="captcha" alt="Image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Текст комментария:</td></tr><tr><td colspan="2" align="center"><textarea name="text"></textarea><br /><input type="submit" value="Оправить комментарий" /></td></tr></table></form></div><div id="reklama"><!--ADVERT_TEMPLATE--></div></div> </div><div id="topic_left"><div id="line_l"></div><div id="info_left"><h3>Дизайн</h3><ul id="l_info"><li><a href="long_add+blp+ru.html">:: Black Purple</a></li><li><a href="long_add+gray+ru.html">:: Gray Text</a></li><li><a href="long_add+npi+ru.html">:: New Pictures</a></li></ul><h3>Друзья</h3><ul id="l_info"><li><a href="http://coderszone.info" target="_blank">:: CodersZone.Info</a></li></ul><h3>Счётчики</h3><ul id="l_info"><li><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--></li><li><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</li></ul></div></div></div><div id="paw"></div></div><div id="add_menu"><ul id="menu_right"><li><a href="../alg/index+npi+ru.html" id="algru" title="Алгоритмы"></a></li><li><a href="../linux/index+npi+ru.html" id="linuxru" title="Linux"></a></li><li><a href="../delphi/index+npi+ru.html" id="delphiru" title="Delphi"></a></li><li><a href="../php/index+npi+ru.html" id="phpru" title="PHP кодинг"></a></li><li><a href="../hack/index+npi+ru.html" id="hackru" title="Хакинг"></a></li><li><a href="../track-music/index+npi+ru.html" id="track-musicru" title="Музыка"></a></li><li><a href="../diz/index+npi+ru.html" id="dizru" title="Дизайн"></a></li><li><a href="../instr/index+npi+ru.html" id="instrru" title="Инструкции"></a></li><li><a href="../other/index+npi+ru.html" id="otherru" title="Другие"></a></li></ul></div></div><div id="bottom"><div id="footer"><ul id="f_left"><li class="ukz"></li><li class="copyright">Copyright &copy; <span>2005-2009</span> by  <a href="http://dexperix.net">DeXPeriX</a></li></ul><ul id="f_right"><li class="icq">606 - 986</li><li class="jabber"><a>root<span>@</span>dexp.in</a></li></ul></div></div></body></html>

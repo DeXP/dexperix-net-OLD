@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Articles > Track music</title>
+		<link>http://dexperix.net</link>
+		<description>All about computer music and it's production process. Here you can find descriptions of some tracker programms and articles for beginners</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Introduction to the Schism Tracker</title>
+			<pubDate>Sun, 26 Nov 2008 00:00:00 +0300</pubDate>
+			<link>schism-intro+npi+en.html</link>
+			<guid>schism-intro+npi+en.html</guid>
+			<description><![CDATA[Many people attracted by keygen music. And many would like to wirite this music. This article will help make the firs steps into the world of track music]]></description>		</item>
+	</channel>
+</rss>

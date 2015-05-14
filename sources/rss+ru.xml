@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Исходники</title>
+		<link>http://dexperix.net</link>
+		<description>Здесь Вы можете найти самые различные исходники написанные на Delphi, C++, PHP и т.д.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Words 2 Brainfuck</title>
+			<pubDate>Sun, 09 Aug 2008 00:00:00 +0300</pubDate>
+			<link>w2bf+npi+ru.html</link>
+			<guid>w2bf+npi+ru.html</guid>
+			<description><![CDATA[Лично мне было лениво программировать на Brainfuck. Поэтому по-быстрому написал программу, которая переводит строковое выражение на язык Brain fuck]]></description>		</item>
+		<item>
+			<title>C++ Image Size</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>imagesize+npi+ru.html</link>
+			<guid>imagesize+npi+ru.html</guid>
+			<description><![CDATA[C++ imagesize - читает размеры (ширину и высоту в пикселях) PNG и JPEG изображений.
+</p><p>Требования: только libstdc++]]></description>		</item>
+		<item>
+			<title>Отчёт к курсовой работе по курсу "Системы компьютерной графики"</title>
+			<pubDate>Sun, 01 Jan 2008 00:00:00 +0300</pubDate>
+			<link>kursach-skg+npi+ru.html</link>
+			<guid>kursach-skg+npi+ru.html</guid>
+			<description><![CDATA[Отчёт полностью написан в системе LaTeX и удовлетворяет многим ГОСТам. Может быть полезен при решении различных проблем и сложностей приведения TeX/LaTeX документа к надлежащему виду<br>
+Кстати, нормальные AutoLISP программы в интернете сейчас тоже редко встретишь. Так что можент ещё и сама суть курсовой кому поможет...]]></description>		</item>
+		<item>
+			<title>Алгоритм Крускала</title>
+			<pubDate>Sun, 25 Feb 2006 00:00:00 +0300</pubDate>
+			<link>kruskal+npi+ru.html</link>
+			<guid>kruskal+npi+ru.html</guid>
+			<description><![CDATA[Неплохая реализация алгоритма, ищущего минимальное остовное дерево. Граф хранится списком ребёр. Использована быстрая сортировка (QSort). Для работы с множествами реализован лес непересекающихся множеств.]]></description>		</item>
+		<item>
+			<title>Максимальный поток</title>
+			<pubDate>Sun, 08 Feb 2006 00:00:00 +0300</pubDate>
+			<link>MaxPotok+npi+ru.html</link>
+			<guid>MaxPotok+npi+ru.html</guid>
+			<description><![CDATA[Исходники программы, находящей максимальный поток в графе. Исходники представлены на 2 языках: C++ и Delphi (Pascal). Поиск максимального потока производится методом Форда-Фалкерсона. Поиск пути производится очередью. Граф хранится списком смежности. Требуемая память - 6E+4V (где Е - количество дуг в графе; V - количество вершин). Сложность работы алгоритма - O(E^2*V).]]></description>		</item>
+		<item>
+			<title>Исходник Дейкстры</title>
+			<pubDate>Sun, 27 Dec 2005 00:00:00 +0300</pubDate>
+			<link>dijkstra+npi+ru.html</link>
+			<guid>dijkstra+npi+ru.html</guid>
+			<description><![CDATA[Исходник одного из известнейших алгоритмов. Он ищет кратчайший путь в графе от любой вершины до каждой вершины. В данном примере граф хранится списком смежности, а поиск минимального
+элемента организован бинарной кучей. Куча одобрена Миняйловым
+Владимиром - серебряным призёром
+мировой олимпиады школьников по программированию 2005 года, золотом призёром мировой олимпиады школьников по программированию 2006 года.]]></description>		</item>
+		<item>
+			<title>LongMath Unit 2.1</title>
+			<pubDate>Sun, 04 Nov 2005 00:00:00 +0300</pubDate>
+			<link>LongMath+npi+ru.html</link>
+			<guid>LongMath+npi+ru.html</guid>
+			<description><![CDATA[Юнит длинной арифметики для Delphi. Реализованы: сложение, вычитание, умножение, деление. Всё это возможно и с дробными числами различного знака. <br>
+Так как в предыдущем юните были найдены грубые ошибки, весь юнит был переписан. Писался в среде Turbo Pascal.]]></description>		</item>
+		<item>
+			<title>WinApiCalc by DeXPeriX</title>
+			<pubDate>Sun, 17 Aug 2005 00:00:00 +0300</pubDate>
+			<link>WinApiCalc+npi+ru.html</link>
+			<guid>WinApiCalc+npi+ru.html</guid>
+			<description><![CDATA[Пример WinApi программирования.<br> В данном примере ведётся работа (создание компонентов) с :<br><br>
+ 1) Форма <br>
+ 2) Главное меню (Menu) <br>
+ 3) Кнопки (Button) <br>
+ 4) Редактируемое окно (Edit) <br>
+ 5) Метка (Label) <br>
+ 6) Таймер (Timer). <br><br>
+ Также есть пример использования стандартного окна (MessаgeBox) и вывода некоторых стандартных звуков (Beep). Весь исходник прекрасно откомментирован.<br>
+ Писался больше как статья, чем как исходник - так что в коде есть, что почитать]]></description>		</item>
+	</channel>
+</rss>

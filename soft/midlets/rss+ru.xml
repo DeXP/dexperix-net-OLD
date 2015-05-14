@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Программы > Мидлеты</title>
+		<link>http://dexperix.net</link>
+		<description>Мидлет — программа для мобильного телефона, написанная на языке Java для виртуальной машины J2ME (Java 2 Micro Edition).
+</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>j2helper</title>
+			<pubDate>Sun, 01 Sep 2008 00:00:00 +0300</pubDate>
+			<link>j2helper+npi+ru.html</link>
+			<guid>j2helper+npi+ru.html</guid>
+			<description><![CDATA[j2helper - программа помощник для J2ME. Например, Вы можете использовать данную программу как справочник по функциям C/PHP/Java/Python/итд, шпаргалку по химии, сборник анекдотов и т.п.
+</p><p>Имеет русско- и англоязычный интерфейс
+</p><p>Важно!: Программа находится в стадии раннего бета-тестирования!]]></description>		</item>
+	</channel>
+</rss>

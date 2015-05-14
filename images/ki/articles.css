@@ -1,0 +1,33 @@
+#menu_right a{ width:25px; display:block; }
+#menu_right a#algen{ height:83px; display:block; background:url(m_alg_en.png) left top no-repeat; }
+#menu_right a#algen:hover { background-position:right; }
+#menu_right a#algru{ height:83px; display:block; background:url(m_alg_ru.png) left top no-repeat; }
+#menu_right a#algru:hover { background-position:right; }
+#menu_right a#linuxen{ height:54px; display:block; background:url(m_linux.png) left top no-repeat; }
+#menu_right a#linuxen:hover { background-position:right; }
+#menu_right a#linuxru{ height:54px; display:block; background:url(m_linux.png) left top no-repeat; }
+#menu_right a#linuxru:hover { background-position:right; }
+#menu_right a#delphiru{ height:54px; display:block; background:url(m_delphi_ru.png) left top no-repeat; }
+#menu_right a#delphiru:hover { background-position:right; }
+#menu_right a#phpen{ height:81px; display:block; background:url(m_php_en.png) left top no-repeat; }
+#menu_right a#phpen:hover { background-position:right; }
+#menu_right a#phpru{ height:81px; display:block; background:url(m_php_ru.png) left top no-repeat; }
+#menu_right a#phpru:hover { background-position:right; }
+#menu_right a#hacken{ height:57px; display:block; background:url(m_hack_en.png) left top no-repeat; }
+#menu_right a#hacken:hover { background-position:right; }
+#menu_right a#hackru{ height:57px; display:block; background:url(m_hack_ru.png) left top no-repeat; }
+#menu_right a#hackru:hover { background-position:right; }
+#menu_right a#track-musicen{ height:57px; display:block; background:url(m_track-music_en.png) left top no-repeat; }
+#menu_right a#track-musicen:hover { background-position:right; }
+#menu_right a#track-musicru{ height:57px; display:block; background:url(m_track-music_ru.png) left top no-repeat; }
+#menu_right a#track-musicru:hover { background-position:right; }
+#menu_right a#dizen{ height:57px; display:block; background:url(m_diz_en.png) left top no-repeat; }
+#menu_right a#dizen:hover { background-position:right; }
+#menu_right a#dizru{ height:57px; display:block; background:url(m_diz_ru.png) left top no-repeat; }
+#menu_right a#dizru:hover { background-position:right; }
+#menu_right a#instrru{ height:83px; display:block; background:url(m_instr_ru.png) left top no-repeat; }
+#menu_right a#instrru:hover { background-position:right; }
+#menu_right a#otheren{ height:57px; display:block; background:url(m_other_en.png) left top no-repeat; }
+#menu_right a#otheren:hover { background-position:right; }
+#menu_right a#otherru{ height:57px; display:block; background:url(m_other_ru.png) left top no-repeat; }
+#menu_right a#otherru:hover { background-position:right; }

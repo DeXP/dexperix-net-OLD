@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Новости</title>
+		<link>http://dexperix.net</link>
+		<description>Добро пожаловать!
+
+Вы попали на сайт о программировании, операционных системах и компьютерах вообще. Желаю Вам приятно провести время!</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Новые программы, исходники и функционал</title>
+			<pubDate>Sun, 05 Apr 2009 00:00:00 +0300</pubDate>
+			<link>veren-added+npi+ru.html</link>
+			<guid>veren-added+npi+ru.html</guid>
+			<description><![CDATA[Движок сейчас изменяется постоянно и глобально, но об этом новости писать не вижу смысла - потому новостей так мало :)
+</p><p>Основное содержимое сайта - статьи. И они сейчас приводятся в соответствие новому движку. Вобщем, смотрите обновления.
+</p><p>Также добавлена новая программа. В ближайшее время начну открывать новые разделы]]></description>		</item>
+		<item>
+			<title>Новый раздел статей: "Трекерная музыка"</title>
+			<pubDate>Sun, 26 Nov 2008 00:00:00 +0300</pubDate>
+			<link>track-music-section-added+npi+ru.html</link>
+			<guid>track-music-section-added+npi+ru.html</guid>
+			<description><![CDATA[На сайт добавлен новый раздел - Трекерная музыка. Там можно найти информацию о процессе создания компьютерной музыки. И первой статьёй стало "Введение в Schism Tracker" , которое может помочь начинающим в создании их первой музыкальной композиции. Эта статья также переведена и на английский язык!
+</p><p>Также постепенно пополняются исходники, программы, фотографии
+</p><p>Работа сейчас в самом разгаре - начиная со следующего года на сайте может появится много интересного материала]]></description>		</item>
+		<item>
+			<title>Большие обновления</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>great_updates_2008+npi+ru.html</link>
+			<guid>great_updates_2008+npi+ru.html</guid>
+			<description><![CDATA[В раздел "Исходники" на сайт выложен C++ Image Size - модуль для работы с JPEG и PNG изображениями, который может проверить тип изображения и выдать его размер в пикселях.
+</p><p>Также выложена версия 2.0 симулятора планировщика ОС dxPlanner. Он также как и Image Size распространяется по лицензии GPL
+</p><p>Недавно мною был сделан частичный перевод плеера Ario на русский язык. Подробнее об этом можно посмотреть в разделе "Переводы".
+</p><p>Также на сайт постепенно возвращается фотоальбом. Система фотоальбома уже полностью дописана, осталось забить БД фотографий.]]></description>		</item>
+		<item>
+			<title>В раздел "Инструкции" добавлены 2 статьи про ICQ</title>
+			<pubDate>Sun, 28 Apr 2008 00:00:00 +0300</pubDate>
+			<link>dobavleny-2-instrukcii-po-icq+npi+ru.html</link>
+			<guid>dobavleny-2-instrukcii-po-icq+npi+ru.html</guid>
+			<description><![CDATA[В раздел "Инструкции" добавлены 2 статьи про ICQ для совсем начинающих. Рассмотрены самые азы: от скачивания нужных программ на сайтах, их подробной установки, до требуемой настройки. Как обычно, всё сопровождено обильным объемом иллюстраций]]></description>		</item>
+		<item>
+			<title>Новый сайт</title>
+			<pubDate>Sun, 20 Apr 2008 00:00:00 +0300</pubDate>
+			<link>new_site_is_shown+npi+ru.html</link>
+			<guid>new_site_is_shown+npi+ru.html</guid>
+			<description><![CDATA[Новая версия этого сайта сегодня была опубликована во всемирной сети. Пока доступны только новости и статьи на русском. Также нет возможности оставлять комментарии. Постепенно контент и функционал будут возвращаться.]]></description>		</item>
+		<item>
+			<title>Правка контента</title>
+			<pubDate>Sun, 08 Apr 2008 00:00:00 +0300</pubDate>
+			<link>content_editing+npi+ru.html</link>
+			<guid>content_editing+npi+ru.html</guid>
+			<description><![CDATA[Сайт был глобально изменён. Движок теперь работает совсем по другому принципу, написан на другом языке. Контент из одного формата в другой пришлось переносить вручную. Отчасти из-за того, что контент нуждался в доработке и исправлениям, отчасти из-за желания создать английское зеркало данного сайта. При этом некоторый ненужный на мой взгляд контент был убран с сайта. Особенно пострадал раздел новостей.]]></description>		</item>
+		<item>
+			<title>Новая программа</title>
+			<pubDate>Sun, 06 Jul 2006 00:00:00 +0300</pubDate>
+			<link>new_programm+npi+ru.html</link>
+			<guid>new_programm+npi+ru.html</guid>
+			<description><![CDATA[На сайт выложен Trojan.BackDoor.RemoteAdm. Поставляется с исходниками и был создан для замены всем известного RAdmina (т.к. последний является платным, а моя софтина - OpenSource :) ). Вобщем, если у вас есть локалка и вам лениво вставать из-за компьютерного стола, чтобы помочь очередному ламеру - качайте, не пожалеете :) :D]]></description>		</item>
+		<item>
+			<title>Новый исходник</title>
+			<pubDate>Sun, 08 Feb 2006 00:00:00 +0300</pubDate>
+			<link>new_source+npi+ru.html</link>
+			<guid>new_source+npi+ru.html</guid>
+			<description><![CDATA[Сегодня написал программу для нахождения максимального потока в графе. Решил выложить на сайт. А архиве есть исходники на 2 языках: С++ и Delphi. Комментариев почти нет, однако код писался по псевдокоду из книги Кормана: "Алгоритмы. Построение и анализ".]]></description>		</item>
+		<item>
+			<title>Серый дизайн теперь действительно серый</title>
+			<pubDate>Sun, 20 Jan 2006 00:00:00 +0300</pubDate>
+			<link>gray_design_is_really_gray_now+npi+ru.html</link>
+			<guid>gray_design_is_really_gray_now+npi+ru.html</guid>
+			<description><![CDATA[Полностью переработана цветовая схема серого текстового дизайна - дизайн теперь находится в более светлых тонах. Надеюсь, вам понравится.]]></description>		</item>
+		<item>
+			<title>Новая статья</title>
+			<pubDate>Sun, 13 Jan 2006 00:00:00 +0300</pubDate>
+			<link>new_article+npi+ru.html</link>
+			<guid>new_article+npi+ru.html</guid>
+			<description><![CDATA[Была добавлена статья "Способы хранения графов в памяти компьютера". Если Вы хоть немного знакомы с теорией графов, то Вам будет интересно почитать эту статью. Возможно, там Вы сможете почерпнуть для себя что-нибудь интересное.]]></description>		</item>
+		<item>
+			<title>Ещё один дизайн</title>
+			<pubDate>Sun, 05 Dec 2005 00:00:00 +0300</pubDate>
+			<link>one_more_design+npi+ru.html</link>
+			<guid>one_more_design+npi+ru.html</guid>
+			<description><![CDATA[Добавлен ещё один текстовый дизайн - Gray Text. На сайте почти месяц не было новостей - весь месяц разрабатывались новые дизайны и структура сайта.
+</p><p>Как вы заметили, у каждого дазайна свой уникальный набор цветов, своя политика относительно JavaScript, свои скрипты... При смене дизайна сменяется действительно весь дизайн, а не цвет шаблона.]]></description>		</item>
+		<item>
+			<title>BitDefender 9.0 Russificator</title>
+			<pubDate>Sun, 14 Oct 2005 00:00:00 +0300</pubDate>
+			<link>bitdefender-9-0-russificator+npi+ru.html</link>
+			<guid>bitdefender-9-0-russificator+npi+ru.html</guid>
+			<description><![CDATA[BitDefender 9.0 Russificator доведён до более-менее терпимого вида. По крайней мере, теперь его уже можно выкладывать в сеть. Пока он ещё не до конца дописан, но недоработки перевода почти не видны.]]></description>		</item>
+	</channel>
+</rss>

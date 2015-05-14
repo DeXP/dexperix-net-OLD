@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Photoalbum > Other</title>
+		<link>http://dexperix.net</link>
+		<description>Photos that were not covered in any of the preceding sections.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>In winter</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>near_winter+npi+en.html</link>
+			<guid>near_winter+npi+en.html</guid>
+			<description><![CDATA[A good clear winter day, we decided to fun ...]]></description>		</item>
+		<item>
+			<title>Houses ...</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>doma+npi+en.html</link>
+			<guid>doma+npi+en.html</guid>
+			<description><![CDATA[Home. Against the background - carpet! :-D]]></description>		</item>
+		<item>
+			<title>	
+Graduate! :)</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>vypusknik+npi+en.html</link>
+			<guid>vypusknik+npi+en.html</guid>
+			<description><![CDATA[Photo taken just before the final evening]]></description>		</item>
+		<item>
+			<title>Business people</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>delovie_ludi+npi+en.html</link>
+			<guid>delovie_ludi+npi+en.html</guid>
+			<description><![CDATA[And this is my dog. Who even such a cultural dog? ;) :)]]></description>		</item>
+		<item>
+			<title>Dog with a cat</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>zaika_s_koshkoi+npi+en.html</link>
+			<guid>zaika_s_koshkoi+npi+en.html</guid>
+			<description><![CDATA[All the same dog, but already with the cat. And, note, in one bed! ;) :-D]]></description>		</item>
+	</channel>
+</rss>

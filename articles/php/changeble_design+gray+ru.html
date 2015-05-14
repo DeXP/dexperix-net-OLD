@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/graytext.css" title="DeXPeriX Home Page" /><title>DeXPeriX Home Page : Статьи > PHP кодинг > Создание сменного дизайна средствами PHP (cookies метод)</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+ru.xml" type="application/rss+xml" /></head><body><div id="bordtable"><div id="rammer"><div id="header"><div class="pred"><pre class="prek"><a href="http://dexperix.net" class="prelink">#########  ########## ###    ### #########  ########## #########  ########### ###    ###
+#+#    #+# #+#        #+#    #+# #+#    #+# #+#        #+#    #+#     #+#     #+#    #+#
+#+#    #+# #+#         #+#  #+#  #+#    #+# #+#        #+#    #+#     #+#      #+#  #+# 
+#+#    #+# #+#+#+#+     +####+   #+#+#+#+#  #+#+#+#+    +#+#+#+#:     #+#       +####+  
+#+#    #+# #+#         +#+  +#+  #+#        #+#        +#+    +#+     #+#      +#+  +#+ 
+#+#    #+# #+#        #+#    #+# #+#        #+#        #+#    #+#     #+#     #+#    #+#
+#########  ########## ###    ### ###        ########## ###    ### ########### ###    ###
+
+          #   #  ###  #   # #####    ####     ##   ###  #####          
+     #    #   # #   # ## ## #_       #   #   # #  #     #        #     
+#         ##### #   # ## ## ###      #   #  #  # #   ## ###           #
+     #    #   # #   # # # # #        ####  #####  #  #  #        #     
+          #   #  ###  #   # #####    #     #   #   ###  #####          </a></pre></div></div><div id="menucol"><div class="menutop">.: Меню</div><a href='../../news/index+gray+ru.html' class="butmenulink">: Новости</a> <a href='../../blog/index+gray+ru.html' class="butmenulink">: Блог</a> <a href='../../articles/index+gray+ru.html' class="butmenulink">: Статьи</a> <a href='../../articles/alg/index+gray+ru.html' class="butmenulink">: - Алгоритмы</a> <a href='../../articles/linux/index+gray+ru.html' class="butmenulink">: - Linux</a> <a href='../../articles/delphi/index+gray+ru.html' class="butmenulink">: - Delphi</a> <a href='../../articles/php/index+gray+ru.html' class="butmenulink">: - PHP кодинг</a> <a href='../../articles/hack/index+gray+ru.html' class="butmenulink">: - Хакинг</a> <a href='../../articles/track-music/index+gray+ru.html' class="butmenulink">: - Музыка</a> <a href='../../articles/diz/index+gray+ru.html' class="butmenulink">: - Дизайн</a> <a href='../../articles/instr/index+gray+ru.html' class="butmenulink">: - Инструкции</a> <a href='../../articles/other/index+gray+ru.html' class="butmenulink">: - Другие</a> <a href='../../sources/index+gray+ru.html' class="butmenulink">: Исходники</a> <a href='../../soft/index+gray+ru.html' class="butmenulink">: Программы</a> <a href='../../soft/free/index+gray+ru.html' class="butmenulink">: - Бесплатные</a> <a href='../../soft/share/index+gray+ru.html' class="butmenulink">: - Коммерческие</a> <a href='../../soft/midlets/index+gray+ru.html' class="butmenulink">: - Мидлеты</a> <a href='../../projects/index+gray+ru.html' class="butmenulink">: Проекты</a> <a href='../../tranlations/index+gray+ru.html' class="butmenulink">: Переводы</a> <a href='../../photo/index+gray+ru.html' class="butmenulink">: Фотоальбом</a> <a href='../../photo/univer/index+gray+ru.html' class="butmenulink">: - Универ</a> <a href='../../photo/mozyr2007/index+gray+ru.html' class="butmenulink">: - Мозырь 2007</a> <a href='../../photo/gstu2008/index+gray+ru.html' class="butmenulink">: - Сухого 2008</a> <a href='../../photo/JeepTrial2008/index+gray+ru.html' class="butmenulink">: - Джип Триал</a> <a href='../../photo/drive/index+gray+ru.html' class="butmenulink">: - Драйв</a> <a href='../../photo/sea2008/index+gray+ru.html' class="butmenulink">: - Море 2008</a> <a href='../../photo/other/index+gray+ru.html' class="butmenulink">: - Другие</a> <a href='../../about-site/index+gray+ru.html' class="butmenulink">: О сайте</a> <div class="menubot">.: End Меню</div><div class="menutop">.: Дизайн</div><a href="changeble_design+blp+ru.html" class="butmenulink">: Black Purple</a><a href="changeble_design+gray+ru.html" class="butmenulink">: Gray Text</a><a href="changeble_design+npi+ru.html" class="butmenulink">: New Pictures</a><div class="menubot">.: End Дизайн</div><div class="menutop">.: Друзья</div><a href="http://coderszone.info" class="butmenulink" target="_blank">: CodersZone.Info</a><div class="menubot">.: End Друзья</div><div class="menutop">Поиск по сайту</div><form action="http://www.google.com/cse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:x64p4f5z3o8" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" size="15" class="googlesearch" /><input type="submit" name="sa" value="Искать" class="gsbut" /></form><div class="menubot">.: Поиск по сайту</div></div><div id="contcol"><div class="houter"><div class="hn"><div class="ht">23.03.2006 :.</div><div class="hh">.: Создание сменного дизайна средствами PHP (cookies метод)</div></div><div class="cont"><p>На многих сайтах можно видеть окошко выбора дизайна. Так пользователь может сам выбрать внешний вид, который ему по душе. 
+Согласитесь, это довольно удобно. Сегодня и мы реализуем эту возможность! :)
+</p><p>Для начала рассмотрим общую модель дизайна сайта:
+</p><p><span class="centered"><img src="../../images/php/chdiz.png" height="191" width="280" alt="Общая модель дизайна" title="Общая модель дизайна" /></span>
+</p><p>Как видите, чаще всего дизайн можно разбить на 3 части: <b>заголовок</b> страницы (чаще всего он одинаков у всех страниц), 
+<b>текст страницы</b> (у каждой страницы свой) и <b>окончание</b> страницы (аналогично заголовку).
+</p><p>Пусть у нас есть две функции: <b>print-begin</b> (выводит заголовок) и <b>print-end</b> (выводит окончание страницы). Тогда PHP 
+код страниц будет выглядеть примерно так:
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>  ...
+  print-begin();
+  echo('Текст данной страницы');
+  print-end();</code></pre></div>
+</p><p>А ещё очень удобно выделить данные функции в какой-нибудь файл, например, <b>design.php</b>. Т.е. наш код станет таким:
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>  include('design.php');
+  print-begin();
+  echo('Текст данной страницы');
+  print-end();</code></pre></div>
+</p><p>Теперь ещё усложним наш пример: в зависимости от значения переменной <b>$_GET['design']</b> будем использовать тот или иной 
+дизайн:
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>  switch($_GET['design']) 
+  {
+      case 1: 
+        include('design.php');
+      break;
+      case 2: 
+        include('another-design.php'); 
+      break;
+      default:   
+        include('design.php'); 
+  };
+
+  print-begin();
+  echo('Текст данной страницы');
+  print-end();</code></pre></div>
+</p><p>Теперь попробуйте запустить данный скрипт с параметром <b>design=1</b> и <b>design=2</b> (например, 
+http://localhost/index.php?design=2). Вы увидите, что дизайн действительно изменится (если файлы design.php и another-design.php 
+существуют). Вот и прекрасно, основной скрипт уже написан, его мы менять не будем, однако можете поэкспериментировать с ним сами.
+</p><p>Теперь мы научимся красиво устанавливать переменную <b>$design</b>. Очень неудобно каждый раз передавать её в адресной строке. 
+Чаще всего данная переменная регистрируется либо в cookies, либо отдельно сохраняется на сайте в параметрах конкретного 
+пользователя. Мы будем использовать cookies.
+Если кто-то не знает или забыл, что такое cookies, напоминаю: cookies - это маленькие текстовые файлы, установленные на компьютере 
+пользователя, в которые Ваш сайт может записывать или считывать информацию. Данная информация представима в виде: 
+"переменная" -> "значение".
+</p><p>Для работы с cookies нам нужно уметь устанавливать и считывать их значения. Для установки cookies используется функция 
+<b>setcookie</b>(string name [, string value [, int expire [, string path [, string domain [, int secure]]]]]). Нам интересны лишь 
+первые 3 параметра: имя переменной куки; значение данной переменной; дата истечения срока действия cookie. Вот пример работы с 
+данной функцией:
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>  $nextyear = mktime(0,0,0,date("m"),date("d"),date("Y")+1);
+  setcookie('design', 1, $nextyear);</code></pre></div>
+</p><p>Здесь мы переменной design присваиваем значение 1. Хранится это значение будет год, после срока установки.
+</p><p>Узнавать значения cookies ещё проще, чем устанавливать - они автоматически считываются в соответствующие переменные. Т.е. если на 
+компьютере пользователя установлена cookie-переменная design, то вы можете её узнать просто посмторев PHP-переменную 
+$_COOKIE['design']:
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>  printf("Значение cookie-переменной design = %s",$_COOKIE['design']);</code></pre></div>
+</p><p>И ещё, с cookies можно работать ТОЛЬКО до вывода текста (до вывода <html> тега). Также установленые cookie будут невидимы до тех 
+пор, пока не будет загружена следующая страница.
+</p><p>Если всё ещё не понятно, что такое cookie, то лучше почитайте ещё какую-нибудь статью, т.к. вещь это очень полезная.
+</p><p>Ну и напоследок интерфейс установки cookies на сайт:
+</p><p>Форма выбора дизайна (designform.htm):
+</p><p><div class="codedtop">HTML код:</div><div class="coded"><pre><code>  &lt;form action="setcook.php" method="post">
+  &lt;select name="diz_sel" size="1">
+    &lt;option value="1">Design 1&lt;/option>
+    &lt;option value="2">Design 2&lt;/option>
+  &lt;/select></code></pre></div>
+</p><p>Файл setcook.php (устанавливает значения cookies):
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>&lt;?php
+  $nextyear = mktime(0,0,0,date("m"),date("d"),date("Y")+1);
+  setcookie('diz', $_POST['diz_sel'], $nextyear);
+  header("Location: $_SERVER['HTTP_REFERER']");
+?></code></pre></div>
+</p><p>Файл index.php (код страницы):
+</p><p><div class="codedtop">PHP код:</div><div class="coded"><pre><code>&lt;?php
+  $tmpdiz = 0;
+  if( isset($_COOKIE['design']) ) $tmpdiz = $_COOKIE['design'];
+  if( isset($_GET['design']) ) $tmpdiz = $_GET['design'];
+  switch($tmpdiz) 
+  {
+      case 1:
+        include('design.php');
+      break;
+      case 2: 
+        include('another-design.php'); 
+      break;
+      default:   
+        include('design.php'); 
+  };
+
+  print-begin();
+  echo('Текст данной страницы');
+  echo('Также Вы можете выбрать дизайн страницы :');
+  include('designform.htm');
+  print-end();
+?></code></pre></div>
+</p><p>Взаключение скажу, что это не единственный способ сделать дизайн сменным - их огромное количество. Однако данный метод (включение 
+нужного файла с функциями) один из самых простых и удобных.
+</p><p>Если у вас на сайте есть регистрация пользователей и о них хранится какая-либо информация, то лучше хранить информацию о дизайне 
+именно там, т.к. не у всех включены cookies. И ещё: никогда не храните в cookies конфиденциальные данные - cookies довольно легко 
+подделываются...
+</p><p>Ну вот и всё, что я хотел вам сегодня рассказать. Надеюсь, эта статья хоть кому-то помогла и сделала жизнь чуточку легче :)</p></p></div></div><br /><p class="plink"><a href="changeble_design+ru.pdf">Скачать в формате PDF</a> (116.3 kB)</p><h1 id="comments">Комментарии :</h1><div class="houter"><div class="hn"><div class="ht">26.03.2007 :.</div><div class="hh">.: webzona</div></div><div class="cont"><p>Распиши лучше свой исходный код!</p></div></div><div class="houter"><div class="hn"><div class="ht">28.06.2007 :.</div><div class="hh">.: nnn</div></div><div class="cont"><p>Я бы предложил использовать вместо include - require (_once)с отладкой будет значительно полегчеа во-вторых, откуда берется переменная $design??такой скрипт вероятно будет работать, только при включенном register_globals .... что тоже уже не есть хорошо</p></div></div><h1 id="commentsform">Оставить комментарий:</h1><div class="houter"><div class="hn"><div class="hh">.: Оставить комментарий</div></div><div class="cont"><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="25" /><input type="hidden" name="uid" value="56" />Имя (ник):</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш ник или реальное имя. Будет показано в заголовке комментария )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш e-mail. Используется только для связи с Вами администрации. Показан НЕ будет )</small></td></tr><tr><td>Сайт, ICQ или Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Это поле будет отображено в заголовке комментария рядом с Вашим именем )</small></td></tr><tr><td>Ваша оценка:</td><td><select name="rathing" size="1"><option value="0" selected="selected">Нет оценки</option><option value="1">Ужасно</option><option value="2">Плохо</option><option value="3">Нормально</option><option value="4">Хорошо</option><option value="5">Отлично</option></select></td></tr><tr><td colspan="2"><small>( Как Вы оцениваете данный материал? По умолчанию оценка не ставится )</small></td></tr><tr><td colspan="2">Введите число, изображённое на картинке <img src="http://dexperix.net/scripts/image.php?id=25" width="90" height="30" align="middle" class="captcha" alt="image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Текст комментария:</td></tr><tr><td colspan="2" align="center"><textarea name="text" rows="12" cols="90"></textarea><br /><input type="submit" value="Оправить комментарий" /></td></tr></table></form></div></div><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</div><div id="footinfo"><a href="http://validator.w3.org/check/referer">Valid XHTML 1.0 Transitional</a> &nbsp; <a href="http://jigsaw.w3.org/css-validator/validator">Valid CSS</a></div><div id="footer">COPYRIGHT © 2005-2009 DeXPeriX</div></div></div></body></html>

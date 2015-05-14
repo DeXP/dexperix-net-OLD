@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Software > Midlets</title>
+		<link>http://dexperix.net</link>
+		<description>A MIDlet is a Java program for embedded devices, more specifically the Java ME virtual machine. Generally, these are games and applications that run on a cell phone.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>j2helper</title>
+			<pubDate>Sun, 01 Sep 2008 00:00:00 +0300</pubDate>
+			<link>j2helper+npi+en.html</link>
+			<guid>j2helper+npi+en.html</guid>
+			<description><![CDATA[j2helper - J2ME helping program. For example, you can use it like reference book by C/PHP/Java/Python/etc function.
+</p><p>Have russian and english interface
+</p><p>Important!: It's a very very beta release!]]></description>		</item>
+	</channel>
+</rss>

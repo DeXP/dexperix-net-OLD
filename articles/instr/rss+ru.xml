@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Инструкции</title>
+		<link>http://dexperix.net</link>
+		<description>В данном разделе выложены "Инструкции" для моей локальной сети. Они рассчитаны на то, чтоб даже самый ничего не смыслящий юзер смог настроить свой компьютер после переустановки windows и т.п.
+Некоторые из статей адаптированы до более-менее универсального вида, а некоторые выложены прям в том виде, в котором у нас в локалке.
+Если вы администратор локалки и вам лениво писать доки - гляньте в этот раздел. Может найдёте там чего-нибудь для себя...</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Регистрация в сервисе ICQ через официальный сайт</title>
+			<pubDate>Sun, 28 Apr 2008 00:00:00 +0300</pubDate>
+			<link>icq-com+npi+ru.html</link>
+			<guid>icq-com+npi+ru.html</guid>
+			<description><![CDATA[Слышали от знакомых слово "аська", хотите завести себе такое чудо но не знаете с чего начать? Тогда читайте этот материал! Не важно, под какой операционной системой Вы сидите - регистрация на официальном сайте возможна из любого браузера]]></description>		</item>
+		<item>
+			<title>Установка и настройка ICQ-клиента QIP</title>
+			<pubDate>Sun, 28 Apr 2008 00:00:00 +0300</pubDate>
+			<link>icq-qip+npi+ru.html</link>
+			<guid>icq-qip+npi+ru.html</guid>
+			<description><![CDATA[Если Вы уже зарегистрировали себе UIN, но не знаете, что с ним делать дальше, какой клиент установить и как это сделать, то Вам будет интересен данный материал]]></description>		</item>
+		<item>
+			<title>Правила сети и чата</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>rules+npi+ru.html</link>
+			<guid>rules+npi+ru.html</guid>
+			<description><![CDATA[этот набор правил писался "по-быструхе" - чтоб были. Всё-равно их никто не читает, но быть для приличия должны :D]]></description>		</item>
+		<item>
+			<title>Настройка сети в Windows XP (ручная)</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>netxp+npi+ru.html</link>
+			<guid>netxp+npi+ru.html</guid>
+			<description><![CDATA[Описано базовое конфигурирование компьютера, которое нужно, чтобы он "был в сети". Настройка производится с ручным вводом IP-адреса и прочих параметров (иными словами, без DHCP)]]></description>		</item>
+		<item>
+			<title>Настройка чата Network Assistant</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>nassi+npi+ru.html</link>
+			<guid>nassi+npi+ru.html</guid>
+			<description><![CDATA[Network Assistant настраивается по бессерверному пути, по протоколу UDP. Выбор общей папки не обязателен, но рассмотрен.]]></description>		</item>
+		<item>
+			<title>Установка, настройка и использование KVirc</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>kvirc+npi+ru.html</link>
+			<guid>kvirc+npi+ru.html</guid>
+			<description><![CDATA[IRC-чаты наиболее предпочтительны, как чаты с серверной технологией для сетей. Рассмотрен один из наиболее красивых и удобных клиентов - KVirc]]></description>		</item>
+		<item>
+			<title>Установка и настройка RAdmin (в Windows XP)</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>radmin+npi+ru.html</link>
+			<guid>radmin+npi+ru.html</guid>
+			<description><![CDATA[для удалённого управления компьютером пользователя в windows очень удобно использовать программу RAdmin. Эта инструкция для пользователя, чтоб он сам мог настроить сервер radmin, а не заставлял Вас бежать к нему домой с этой целью :)]]></description>		</item>
+		<item>
+			<title>Настройка VPN-соединения (от server.by)</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>vpn+npi+ru.html</link>
+			<guid>vpn+npi+ru.html</guid>
+			<description><![CDATA[оригинал написан специалистами из server.by. Мной было сделано портирование в удобоваримый HTML вид и незначительные исправления.]]></description>		</item>
+		<item>
+			<title>Как добраться до фирмы "Сервер".</title>
+			<pubDate>Sun, 05 Jun 2007 00:00:00 +0300</pubDate>
+			<link>server_by+npi+ru.html</link>
+			<guid>server_by+npi+ru.html</guid>
+			<description><![CDATA[описание пути до гомельского интернет-провайдера Server.by. Если вы живёте не в Беларуси и не в городе Гомеле - можете не читать.]]></description>		</item>
+	</channel>
+</rss>

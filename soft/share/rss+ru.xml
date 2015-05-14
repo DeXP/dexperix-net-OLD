@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Программы > Коммерческие > Коммерческие программы</title>
+		<link>http://dexperix.net</link>
+		<description>Чаще всего эти программы делались на заказ. Здесь в основном лежат демо версии этих программ.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>ATest</title>
+			<pubDate>Sun, 26 Aug 2005 00:00:00 +0300</pubDate>
+			<link>ATest+npi+ru.html</link>
+			<guid>ATest+npi+ru.html</guid>
+			<description><![CDATA[Программа для сборки тестов из базы данных. База данных имеет специфический формат - хранится в Word документе в виде таблицы. Из этой базы нужно сгенерировать тест в том виде, в котором его привыкли видеть абитуриенты. Выборка ведётся по определённым настраиваемым правилам]]></description>		</item>
+		<item>
+			<title>RCT</title>
+			<pubDate>Sun, 12 Feb 2005 00:00:00 +0300</pubDate>
+			<link>rct+npi+ru.html</link>
+			<guid>rct+npi+ru.html</guid>
+			<description><![CDATA[Gomel Regional Center of Testing - программа для автоматизации Централизованного Тестирования. Умеет работать с отсканированными листами, делать проверку, вести статистику. Имеет приятный и понятный интерфейс. Большое количество настроек.]]></description>		</item>
+	</channel>
+</rss>

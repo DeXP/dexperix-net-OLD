@@ -1,0 +1,13 @@
+#menu_right a{ width:25px; display:block; }
+#menu_right a#freeen{ height:83px; display:block; background:url(m_free.png) left top no-repeat; }
+#menu_right a#freeen:hover { background-position:right; }
+#menu_right a#freeru{ height:83px; display:block; background:url(m_free.png) left top no-repeat; }
+#menu_right a#freeru:hover { background-position:right; }
+#menu_right a#shareen{ height:83px; display:block; background:url(m_share.png) left top no-repeat; }
+#menu_right a#shareen:hover { background-position:right; }
+#menu_right a#shareru{ height:83px; display:block; background:url(m_share.png) left top no-repeat; }
+#menu_right a#shareru:hover { background-position:right; }
+#menu_right a#midletsen{ height:57px; display:block; background:url(m_midlets_en.png) left top no-repeat; }
+#menu_right a#midletsen:hover { background-position:right; }
+#menu_right a#midletsru{ height:83px; display:block; background:url(m_midlets_ru.png) left top no-repeat; }
+#menu_right a#midletsru:hover { background-position:right; }

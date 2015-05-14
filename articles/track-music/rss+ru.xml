@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Музыка > Трекерная музыка</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи о компьютерной музыке и процессе её производства. Здесь же находятся описания программ-трекеров и статьи для начинающих</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Введение в Schism Tracker</title>
+			<pubDate>Sun, 26 Nov 2008 00:00:00 +0300</pubDate>
+			<link>schism-intro+npi+ru.html</link>
+			<guid>schism-intro+npi+ru.html</guid>
+			<description><![CDATA[Многих привлекает музыка в кейгенах. И многие хотели бы попробовать подобную музыку самостоятельно. Эта статья поможет сделать первые шаги в мир трекерной музыки]]></description>		</item>
+	</channel>
+</rss>

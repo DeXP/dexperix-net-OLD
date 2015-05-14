@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Фотоальбом > Другие</title>
+		<link>http://dexperix.net</link>
+		<description>Фотки, которые не вошли ни в один из предыдущих разделов.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Зимой</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>near_winter+npi+ru.html</link>
+			<guid>near_winter+npi+ru.html</guid>
+			<description><![CDATA[Хорошим ясным зимним днём решили мы повеселиться...]]></description>		</item>
+		<item>
+			<title>Дома...</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>doma+npi+ru.html</link>
+			<guid>doma+npi+ru.html</guid>
+			<description><![CDATA[Дома. На фоне - ковёр! :-D]]></description>		</item>
+		<item>
+			<title>Выпускник! :)</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>vypusknik+npi+ru.html</link>
+			<guid>vypusknik+npi+ru.html</guid>
+			<description><![CDATA[Фотка сделана непосредственно перед выпускным вечером]]></description>		</item>
+		<item>
+			<title>Деловые люди</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>delovie_ludi+npi+ru.html</link>
+			<guid>delovie_ludi+npi+ru.html</guid>
+			<description><![CDATA[А это мой пёс. У кого ещё такая культурная собака? ;) :)]]></description>		</item>
+		<item>
+			<title>Пёс с кошкой</title>
+			<pubDate>Sun, 16 May 2008 00:00:00 +0300</pubDate>
+			<link>zaika_s_koshkoi+npi+ru.html</link>
+			<guid>zaika_s_koshkoi+npi+ru.html</guid>
+			<description><![CDATA[Всё тот же пёс, но уже с кошкой. Причём, заметьте, в одной постели! ;) :-D]]></description>		</item>
+	</channel>
+</rss>

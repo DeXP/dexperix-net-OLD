@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Блог</title>
+		<link>http://dexperix.net</link>
+		<description>Это мой блог. В нём будут находиться всякие заметки, примечания, философские размышления и так далее :) Так же в нём можно будет найти полезную информацию, найденную в инете и полезную в быту.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Как мы сарай строили</title>
+			<pubDate>Sun, 29 Aug 2008 00:00:00 +0300</pubDate>
+			<link>kak_my_sarai_stroili+npi+ru.html</link>
+			<guid>kak_my_sarai_stroili+npi+ru.html</guid>
+			<description><![CDATA[О ужас! Самые страшные предположения сбылись - нам всё-таки придётся построить сарай на даче! Неизвестно, что может быть хуже этой новости... Однако мы были бы не мы, если бы всё прошло как у людей. Итак, сага...]]></description>		</item>
+		<item>
+			<title>Первое впечатление от LaTeX</title>
+			<pubDate>Sun, 15 Oct 2007 00:00:00 +0300</pubDate>
+			<link>pervoe_vpechatlenie_ot_latex+npi+ru.html</link>
+			<guid>pervoe_vpechatlenie_ot_latex+npi+ru.html</guid>
+			<description><![CDATA[Уже давно у меня перед глазами мелькало название "LaTeX". Что за "латекс" такой я не знал, хотя припоминал, что в каких-то фильмах видел ;)
+</p><p>Однако про эту профессиональную издательскую систему у меня сложилось очень хорошее впечатление. "ворд" и прочие визуальные редакторы - фтопку! :)]]></description>		</item>
+		<item>
+			<title>Как мы на речку ездили</title>
+			<pubDate>Sun, 23 Aug 2007 00:00:00 +0300</pubDate>
+			<link>kak_my_na_pechky_ezdili+npi+ru.html</link>
+			<guid>kak_my_na_pechky_ezdili+npi+ru.html</guid>
+			<description><![CDATA[Однажды, жутким летним днём, решили мы повеселиться.
+</p><p>Конечно же - пойти на речку и напиться.
+</p><p>Но право, разве ж мы такие вот холопы?
+</p><p>Короче, понесло на приключенья наши ж***.
+</p><p>Аль долго мы гуляли, али нет.
+</p><p>Но вобщем, мы объехали весь свет.
+</p><p>И к дамам сердца успели мы смотаться.
+</p><p>Однак не суждено в тот вечер было нам встречаться...
+</p><p>И разошлися мы ни с чем
+</p><p>Зато без лишних, блин, проблем! :-D
+</p><p></p><p>Продолжения саги, однако не в стихотворной форме, читайте в полной версии :)]]></description>		</item>
+		<item>
+			<title>Встречайте, Vim!</title>
+			<pubDate>Sun, 08 Aug 2007 00:00:00 +0300</pubDate>
+			<link>vstrechaite_vim+npi+ru.html</link>
+			<guid>vstrechaite_vim+npi+ru.html</guid>
+			<description><![CDATA[Ещё относительно недавно я сидел в KDE и для редактирования текстов использовал Kate. Тогда мне было не понятно, зачем нужны ещё какие-то редакторы, какие-то там emacs, vim, ведь есть чудесный и полнофункциональный редактор Kate. Но какое это было заблуждение... Если посмотреть вокруг, то очень много из уважаемых людей для редактирования текстов используют emacs или vim. Почему б не попробовать самому? Мой выбор пал на vim. Для начала нужно его скачать (<a href="http://vim.org/" target="blank">http://vim.org/</a>) и установить. Но Gentoo сделала это за меня :) Также желательно установить графическую версию - GVim. Просто так сесть и работать в нём не получится. Придётся немного поучиться. Одним из лучших пособий по vi/vim/gvim для начинающих является <a href="http://www.gentoo.org/doc/ru/vi-guide.xml" target="blank">http://www.gentoo.org/doc/ru/vi-guide.xml</a> "Изучение vi по шпаргалке". По этой шпаргалке можно понять, что такое vim и научиться основам работы в нём. Если этот редактор Вам по душе, то тогда можно продолжать улучшать свои навыки. Много полезной информации можно найти в блоге <a href="http://allaboutvim.blogspot.com/" target="blank">http://allaboutvim.blogspot.com/</a> "Всё о Vim", который создал глубокоуважаемый Pento. Там можно найти статьи по настройке, работе в vim, полезные советы и ещё много чего. Дополнительную литературу можно найти на сайте <a href="http://linuxcenter.ru/enc/textmode.phtml#5.5." target="blank">http://linuxcenter.ru/enc/textmode.phtml#5.5.</a>. Также можно очень тонко и мощно настроить этот редактор под себя. В этом Вам поможет тема <a href="http://linuxforum.ru/index.php?showtopic=36820" target="blank">http://linuxforum.ru/index.php?showtopic=36820</a> "Тонкая настройка vim" на русском линукс-форуме.
+</p><p>Однако, и это ещё не всё. Vim - полностью кроссплатформенное приложение. Так что можно записать любимый редактор на флэшку вместе со всеми конфигами и использовать свой, полностью настроенный vim, на работе/учёбе/в детском садике и т.д. В этом может помочь проект <a href="http://portablegvim.sourceforge.net/" target="blank">http://portablegvim.sourceforge.net/</a>.
+</p><p>Ну, надеюсь, теперь информации о Vim многим хватит на долгие годы вперёд :) Не стесняйтесь переходить в этот прекрасный редактор! ;)]]></description>		</item>
+		<item>
+			<title>Блог открылся!</title>
+			<pubDate>Sun, 29 Jul 2007 00:00:00 +0300</pubDate>
+			<link>blog_is_opened+npi+ru.html</link>
+			<guid>blog_is_opened+npi+ru.html</guid>
+			<description><![CDATA[Теперь на сайте появился ещё и блог. Постараюсь сделать его полезным. А вообще блог будет моим маленьким хламничком - тут будет всякая полезная инфа, найденная в инете, которая может пригодиться и которую потом можно будет найти поисковиком. Посмотрим, что из этого получится! :)]]></description>		</item>
+	</channel>
+</rss>

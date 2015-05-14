@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/npi.css" title="DeXPeriX Home Page" media="all"/><link rel="stylesheet" type="text/css" href="../../images/ki/articles.css" title="DeXPeriX Home Page additional" media="all" /><style type="text/css" media="all">@import "../../images/npi.css"; @import "../../images/ki/articles.css";</style><title>DeXPeriX Home Page : Статьи > Linux > Отладка программ в (g)Vim</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+ru.xml" type="application/rss+xml" /><script type="text/javascript" src="../../images/highlight/highlight.js"></script><script type="text/javascript">initHighlightingOnLoad('html', 'css', 'php', 'xml', 'delphi', 'cpp', 'sql', 'bash');</script></head><body><div id="header"><div id="top"><h1></h1><div id="translate"><ul id="lan"><li class="ru"><a href="debugging_in_vim+npi+ru.html" title="ru"><img src="../../images/ki/ru.gif"></a></li><li id="ukazatel" class="clearer"></li><li></li></ul> </div><span>Linux, Hacking, Sources, News, Free Software, Photo and more...</span></div></div><div id="area"><ul id="menu"><li class="Новости"><a href="../../news/index+npi+ru.html" title="Новости"><img src="../../images/ki/home.jpg" alt="Новости" /></a></li><li><a href="../../blog/index+npi+ru.html" id="m1ru" title="Блог"></a></li><li><a href="../../articles/index+npi+ru.html" id="m2ru" title="Статьи"></a></li><li><a href="../../sources/index+npi+ru.html" id="m3ru" title="Исходники"></a></li><li><a href="../../soft/index+npi+ru.html" id="m4ru" title="Программы"></a></li><li><a href="../../projects/index+npi+ru.html" id="m5ru" title="Проекты"></a></li><li><a href="../../tranlations/index+npi+ru.html" id="m6ru" title="Переводы"></a></li><li><a href="../../photo/index+npi+ru.html" id="m7ru" title="Фотоальбом"></a></li><li id="search"><form id="form" action="http://www.google.com/cse" method="get" name="lse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:x64p4f5z3o8" /><input type="hidden" name="ie" value="UTF-8" /><input class="text" type="text" name="q" value=""/><input class="sub" type="submit" value="" name="sa"></form></li></ul><div id="content"><div id="bg_right"><div id="topic"><div id="line"></div><h2>Отладка программ в (g)Vim</h2> <div id="topic-list"><div id="contdata"><p><a href="#screenshot" title="Debugging in (g)Vim"><img src="vimgdb/debugging_small.png" alt="Debugging in (g)Vim" width="295" height="226" align="right" hspace="10" vspace="5" border="0"></a>
+</p><p></p><p><p id="content"><b>Содержание:</b></p>
+<ul>
+	<li><a href="#intro">Введение</a></li>
+	<li><a href="#clewn_install">Установка Clewn</a></li>
+	<li><a href="#vimgdb_install">Установка VimGDB</a></li>
+	<li><a href="#vimgdb_gentoo_install">Установка VimGDB в Gentoo</a></li>
+	<li><a href="#prepairing">Подготовка к запуску</a></li>
+	<li><a href="#run">Запуск</a></li>
+	<li><a href="#debugging">Отладка</a></li>
+	<li><a href="#notes">Замечания</a></li>
+</ul>
+</p><p><br>
+<p align="center"><b id="intro">Введение</b></p>
+</p><p><p>В отличие от emacs, который поддерживает отладку "искаропки", редактор Vim или его графическая версия по умолчанию не имеют средств отладки С/С++ программ. Однако, Vim  в смысле отладки тоже не стоит на месте. Добрые люди пишут различные программы, плагины, патчи для поддержки отладчика GDB в (g)Vim. Многие из них уже выложены на официальный сайт программы: <a target="_blank" href="http://www.vim.org/scripts/script_search_results.php?keywords=gdb&amp;amp;script_type=&amp;amp;order_by=rating&amp;amp;direction=descending&amp;amp;search=search" title="Утилиты для поддержки GDB в Vim">http://Vim.Org/scripts/...</a>. Как видно, многие из этих утилит уже устарели и имеют дату последнего обновления более двух лет назад.</p>
+<p>В этой статье будет рассмотрен проект <a href="http://clewn.sourceforge.net/" target="_blank" title="Clewn Project">Clewn</a>. Это один из самых старых, но всё ещё активно развивающихся проектов. Clewn предоставляет полную поддержку отладчика GDB  в редакторе Vim: точки останова, просмотр переменных, управление GDB напрямую командами и т.д. Это возможно сделать двумя способами: через отдельную программу Clewn, или через VimGDB патч для Vim. Clewn контролирует Vim через netBeans сокет, запускается и выполняется отдельно, сообщая команды Vim. Однако для того, что бы использовать Clewn, Vim должен быть скомпиллирован с поддержкой netBeans. Если Clewn использовать не получается - можно использовать VimGDB. Он накладывается на Vim  до его сборки и выполнен в виде дополнительной опции компиляции. И Clewn и  VimGDB  используют один и тот же функциональный код, так что результат будет приблизительно один и тот же.</p>
+</p><p><br>
+</p><p><p align="center"><b id="clewn_install">Установка Clewn</b></p>
+</p><p><p>Установка Clewn абсолютно стандартна:<br>
+<pre>   ./configure &amp;amp;&amp;amp; su -c 'make &amp;amp;&amp;amp; make install'</pre><br>
+Возможно, читатель найдёт для себя какие-нибудь интересные подробности на <a href="http://clewn.sourceforge.net/install.html" target="_blank" title="Clewn Install">страничке помощи по установке  Clewn</a>. Там же мы узнаём, что для удалённой отладки (в том числе, и на локальной машине <img src="../../images/smilies/smile.png" align="top" height="20" width="20" title=":)" alt=":)" /> ) нужно ввести следующие команды:<br>
+<pre>    host:	gvim -c "run clewn.vim" -nb:target_ip_address
+    target:	clewn -x pathnames_map -nb:target_ip_address</pre>
+</p>
+</p><p></p><p><br>
+</p><p><p align="center"><b id="vimgdb_install">Установка VimGDB</b></p>
+</p><p><p>Если же установить Clewn по каким-либо причинам не удалось, либо читатель просто решил установить поддержку GDB  через VimGDB патч, то нам опять же поможет  <a href="http://clewn.sourceforge.net/install.html" target="_blank" title="Clewn Install">документ помощи по установке</a>. На этот раз, его VimGDB секция. А именно, для начала архивы с Vim  и VimGDB  нужно распаковать:<br>
+<pre>    tar xjf vim-7.1.tar.bz2
+    tar xzf vimgdb71-1.12.tar.gz</pre><br>
+А потом выполнить команду, применяющую патч:<br><br>
+</p><p><pre>    patch -d vim71 --backup -p0 < vimgdb/vim71.diff</pre><br>
+</p><p>После этого переходим в директорию vim71/src  и собираем Vim:<br><br>
+</p><p><pre>    cd vim71/src
+        make	            собрать vim
+        make install        установить vim (могут понадобиться root привилегии)</pre><br>
+Внимание! Выполнять ./configure не нужно! В данном случае этот сценарий выполнится корректно автоматически. Но если очень нужно указать свои опции компиляции, то нужно не забыть опцию --enable-gdb.
+</p>
+<p>После этого нужно распаковать архив vimgdb_runtime.tgz в свою runtime-директорию. Например, &nbsp;/.vim/. Чтобы наверняка её узнать, в запущенном Vim можно выполнить команду<br>
+<pre>    :set runtimepath?</pre><br>
+</p><p>После этого шага runtime-директория должна содержать следующие файлы:<br><br>
+</p><p><pre>    doc/gdb.txt
+    macros/gdb_mappings.vim
+    syntax/gdb.vim
+    syntax/gdbvim.vim
+    syntax/gdbvar.vim</pre><br>
+</p><p>Далее запускаем Vim и вводим команду ":helptags .". Теперь VimGDB полностью установлен и можно читать по нему документацию, введя команду ":help vimgdb".</p>
+</p><p></p><p></p><p><br>
+</p><p><p align="center"><b id="vimgdb_gentoo_install">Установка VimGDB в Gentoo</b></p>
+</p><p><p>В Gentoo руками нужно делать намного меньше. Большую часть работы система может выполнить за Вас. Также, система в добавок пропатчит Vim некоторыми нужными патчами. Для начала создадим <a href="http://www.gentoo.org/doc/ru/handbook/handbook-x86.xml?part=3&amp;amp;chap=5#doc_chap2" target="_blank">локальное дерево портежей</a>. Далее добавляем туда несколько ebuild-файлов, которые можно скачать <a href="http://bugs.gentoo.org/attachment.cgi?id=130388">ТУТ</a> или <a href="vimgdb_ebuilds.tar.bz2">ТУТ</a>. После этого для каждого ebuild-файл нужно создать манифест:<br>
+<pre>    ebuild ./vim-7.1.087.ebuild manifest
+    ebuild ./gvim-7.1.087.ebuild manifest
+    ...
+</pre><br>
+</p><p>Кстати, нужно не забыть предварительно скопировать файлы из подпапок files оригинальных ebuild'ов (/usr/portage/app-editors/vim/files/ и т.п. для gvim), иначе не соберётся. Если всё-таки забыли - нужно скопировать файлы и перегенерировать манифесты. Дигесты создаются автоматичеки при создании манифестов. Также автоматически докачиваются файлы, которых нет в директории distfiles. Теперь добавляем в /etc/portage/package.use USE-флаги "gdb" для пакетов vim и gvim. Всё, теперь можно устанавливать:<br><br>
+</p><p><pre>    emerge -av vim gvim</pre></p>
+</p><p></p><p></p><p><br>
+<p align="center"><b id="prepairing">Подготовка к запуску</b></p>
+</p><p><p>Возможно, перед запуском (g)Vim читатель захочет добавить себе в .vimrc следующие опции:<br>
+<pre>    :syntax enable                      " включить подсветку синтаксиса
+    :set previewheight=12               " установить стартовую высоту окна GDB
+    :run macros/gdb_mappings.vim        " автоматический запуск макроса gdb_mappings
+    :set asm=0                          " не показывать ассемблерные коды
+    :set gdbprg=gdb_invocation          " установить строку вызова GDB (по умолчанию 'gdb')</pre><br>
+</p><p>Каждый ставит опции по своему усмотрению. Но обычно полезен автоматический запуск макроса, отвечающего за комбинации клавиш для GDB. По умолчанию клавиши сразу не переназначаются, т.е. автозапуск этого макроса абсолютно не мешает.  Также полезно отключить отображение ассемблерных кодов, т.к., например, они отображаются каждый раз при шаге на последнюю исполняемую строку файла, при прыжках на функции, исходного кода которых у читателя нет и т.п.</p>
+</p><p></p><p><br>
+<p align="center"><b id="run">Запуск</b></p>
+</p><p><p>Теперь запускаем Vim и загружаем в него нужный исходник. Его нужно откомпилировать. Компиляцию можно либо забиндить на какую-либо комбинацию клавиш в Vim,  либо откомпилировать исходник непосредственно в консоли. Например, командой:<br>
+<pre>    gcc -g3 &amp;lt;имя_файла.cpp&amp;gt;</pre><br>
+</p><p>Она по умолчанию создаёт исполняемый файл  a.out. Параметр g3 отвечает за отладочную информацию, которая и будет использоваться в GDB.</p>
+</p><p><p>Теперь опять вернёмся в Vim. Для начала, запустим скрипт macros/gdb_mappings.vim :<br>
+<pre>    :run macros/gdb_mappings.vim</pre><br>
+</p><p>Теперь можно нажать F7 и нужные комбинации клавиши будут применены.
+</p>
+</p><p><p>Запустим сам GDB. Это можно сделать следующей командой:<br>
+<pre>    :call gdb("file a.out")</pre><br>
+</p><p>Причём, если скомпилированный файл называется не a.out и лежит не в текущей директории, то нужно указать именно нужный файл. Если всё сделано правильно, окно автоматически горизонтально разделится на 2. В верхнем будут идти сообщения GDB. Если всё нормально, GDB  должен сказать что-то похожее на:<br>
+<br>
+<pre>(gdb) file a.out
+  Reading symbols from /home/dxp/a.out...done.
+  Using host libthread_db library "/lib/libthread_db.so.1".</pre><br>
+Всё, GDB запущен. Теперь можно приступать непосредственно к отладке.
+</p>
+</p><p></p><p><br>
+<p align="center"><b id="debugging">Отладка</b></p>
+</p><p><p>Во время работы с Clewn/VimGDB  очень помогает файл помощи (:help vimgdb). Там же можно узнать основные комбинации клавиш, установленные по умолчанию. Нас интересует запуск программы (Shift+R), установка точки останова (Ctrl+B), шаг с заходом в функции (Shift+S), следующая строка (Ctrl+N).</p>
+<p>Первым делам устанавливаем нужные точки останова. После этого можно запустить программу. Выполнение её остановится на первой встретившейся точке останова. После этого можно использовать клавиши шагов (Shift+S, Ctrl+N и т.п.)</p>
+</p><p><p>Однако что за отладка без просмотра значения переменных? Для того, чтобы отобразить значения переменных для начала вертикально разделим наше окно (Ctrl+W V). Выберем то окно, где будут отображаться переменные. После этого вводим команду:<br>
+<pre>    :e gdb-variables</pre><br>
+После этого в окне должен отобразиться пустой буфер. Переменных нет, т.к. их ещё нужно добавить. Добавляются переменные следующим образом:<br>
+<br>
+<pre>    :call gdb("createvar i")</pre><br>
+</p><p>После выполнения этой команды в буфер отображения будет добавлена переменная с именем i. Теперь можно продолжить пошаговую отладку. И значение переменной будет изменяться в режиме реального времени.</p>
+</p><p><p>Просматривать значения переменных можно гораздо удобнее. Например, если в нормальном режиме навести курсор на переменную и нажать Ctrl+P,  то в окне GDB отобразится её значение. Если в визуальном режиме(переход в него из нормального - клавишей v или выделением текста мышью) навести курсор на переменную, или выделить её, после чего нажать Ctrl+P, то переменная автоматически создастся и отобразится в буфере gdb-variables.</p>
+</p><p><p>Иногда в процессе отладки нужно на ходу изменить значение переменной. Для этого нужно выполнить команду, типа:
+<br>
+<pre>   :call gdb("set variable i = 5")</pre><br>
+</p><p>После этого значение переменной успешно изменится. Это отобразится также в буфере переменных.</p>
+</p><p><p>Редактирование значения переменной тоже можно сделать визуальным. Для этого IMDagger советует добавить в свой (g)vimrc следующую строку:<br>
+<br>
+<code> &amp;nbsp; &amp;nbsp;nmap &amp;lt;F4&amp;gt; :let read_v = inputdialog("Value of " . expand("&amp;lt;cword&amp;gt;"),&amp;amp;sw)&amp;lt;CR&amp;gt;:if read_v != ""&amp;lt;CR&amp;gt;:call gdb("set variable " . expand("&amp;lt;cword&amp;gt;") . " = " . read_v)&amp;lt;CR&amp;gt;:endif&amp;lt;CR&amp;gt;</code><br>
+<br>
+Теперь для того, чтобы изменить значение переменной, в нормальном режиме достаточно навести на неё курсор, нажать F4  и в появившемся диалоговом окошке ввести новое значение.
+</p>
+</p><p></p><p><br>
+<p align="center"><b id="notes">Замечания</b></p>
+</p><p><p>Во время работы были замечены некоторые особенности. А именно:<br>
+ - перед использованием пошаговой отладки программу обязательно нужно запустить. Точнее, при отладке программа запускается всегда. Но обычно в средах разработки при нажатии комбинации клавиш "Шаг на следующую строку" среда автоматически запускает программу и "шагает" на 1 строку. Здесь нужно не забывать ставить точки останова и чтобы дойти до первой нужно нажать Shift+R (запустить программу).<br>
+ - в моей сборке переменные, отображаемые в буфере gdb-variables, действительны на период только одного запуска программы. Т.е. при перезапуске (например, когда прошли все шаги выполнения и программа корректно завершилась) переменные также нужно пересоздать, т.к. имена ранее добавленных переменных отображаются, а значения - нет. Однако у некоторых людей всё нормально работает.</p>
+<p>Эта статья будет постепенно совершенствоваться и дополняться. Надеюсь, с Вашей помощью.<br>
+Также в процессе перевода справка VimgGDB на русский язык.</p>
+</p><p></p><p></p><p><br>
+<p>А вот как выглядит отладка в GVim:</p>
+</p><p><p align="center"><img src="vimgdb/debugging.png" alt="Debugging in (g)Vim" id="screenshot" width="589" height="451"></p></p></div><h2 id="comments">Комментарии</h2><div id="title"><h3><img src="../../images/flags/BY.gif" width="30" height="15" alt="BY" title="BY" /> IMDagger ( <img src="../../images/profile_icq2.gif" width="18" height="18" align="top" alt="(icq)"> 350395088 )</h3><span>13.09.2007</span></div><div id="text"><img src="../../images/avatars/imdagger.jpg" class="preview" width="111" height="150" alt="IMDagger" title="IMDagger" /><p>Переменные пересоздавать не нужно, т.к. всё работает.</p><p>Заходи ко мне на работу - покажу, или я к тебе домой, когда зайду, гляну, что с твоим вимом.</p><p>&gt;&gt;Перед использованием пошаговой отладки программу обязательно нужно запустить</p><p>Я думаю ты хотел сказать, что нужно установить точку останова, а не запустить, т.к. запуск - это дело обычное, а вот, то что нужно установить точку останова, а затем запустить прогу - вот это уже специфика.</p><p>Переменные можно добавлять не вводя комманды виму, они забинжены уже на Ctrl+P в visual mode; а в normal mode будет print в окно gdb; хотя вообще можно всё перенастроить - на то он и Vim</p></div><div id="next_comm">&nbsp;</div><div id="contdata"><h2 id="commentsform">Оставить комментарий</h2><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="37" /><input type="hidden" name="uid" value="107" />Имя (ник):</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш ник или реальное имя. Будет показано в заголовке комментария )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш e-mail. Используется только для связи с Вами администрации. Показан НЕ будет )</small></td></tr><tr><td>Сайт, ICQ или Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Это поле будет отображено в заголовке комментария рядом с Вашим именем )</small></td></tr><tr><td>Ваша оценка:</td><td><select name="rathing" size="1"><option value="0" selected="selected">Нет оценки</option><option value="1">Ужасно</option><option value="2">Плохо</option><option value="3">Нормально</option><option value="4">Хорошо</option><option value="5">Отлично</option></select></td></tr><tr><td colspan="2"><small>( Как Вы оцениваете данный материал? По умолчанию оценка не ставится )</small></td></tr><tr><td colspan="2">Введите число, изображённое на картинке <img src="http://dexperix.net/scripts/image.php?id=37" width="90" height="30" align="middle" class="captcha" alt="Image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Текст комментария:</td></tr><tr><td colspan="2" align="center"><textarea name="text"></textarea><br /><input type="submit" value="Оправить комментарий" /></td></tr></table></form></div><div id="reklama"><!--ADVERT_TEMPLATE--></div></div> </div><div id="topic_left"><div id="line_l"></div><div id="info_left"><h3>Дизайн</h3><ul id="l_info"><li><a href="debugging_in_vim+blp+ru.html">:: Black Purple</a></li><li><a href="debugging_in_vim+gray+ru.html">:: Gray Text</a></li><li><a href="debugging_in_vim+npi+ru.html">:: New Pictures</a></li></ul><h3>Друзья</h3><ul id="l_info"><li><a href="http://coderszone.info" target="_blank">:: CodersZone.Info</a></li></ul><h3>Счётчики</h3><ul id="l_info"><li><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--></li><li><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</li></ul></div></div></div><div id="paw"></div></div><div id="add_menu"><ul id="menu_right"><li><a href="../alg/index+npi+ru.html" id="algru" title="Алгоритмы"></a></li><li><a href="../linux/index+npi+ru.html" id="linuxru" title="Linux"></a></li><li><a href="../delphi/index+npi+ru.html" id="delphiru" title="Delphi"></a></li><li><a href="../php/index+npi+ru.html" id="phpru" title="PHP кодинг"></a></li><li><a href="../hack/index+npi+ru.html" id="hackru" title="Хакинг"></a></li><li><a href="../track-music/index+npi+ru.html" id="track-musicru" title="Музыка"></a></li><li><a href="../diz/index+npi+ru.html" id="dizru" title="Дизайн"></a></li><li><a href="../instr/index+npi+ru.html" id="instrru" title="Инструкции"></a></li><li><a href="../other/index+npi+ru.html" id="otherru" title="Другие"></a></li></ul></div></div><div id="bottom"><div id="footer"><ul id="f_left"><li class="ukz"></li><li class="copyright">Copyright &copy; <span>2005-2009</span> by  <a href="http://dexperix.net">DeXPeriX</a></li></ul><ul id="f_right"><li class="icq">606 - 986</li><li class="jabber"><a>root<span>@</span>dexp.in</a></li></ul></div></div></body></html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Articles > Linux > The Linux operation system</title>
+		<link>http://dexperix.net</link>
+		<description>After long using window$ quite difficult to work with Linux. Articles of this section are designed to make life easier for people, the rolling of window$ in Linux, as well as help some of inveterate linuxoid's.
+Also, I want to say that this section is "live" - that is, Articles will try to maintain the maximum date and continuously updated.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+	</channel>
+</rss>

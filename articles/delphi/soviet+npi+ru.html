@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/npi.css" title="DeXPeriX Home Page" media="all"/><link rel="stylesheet" type="text/css" href="../../images/ki/articles.css" title="DeXPeriX Home Page additional" media="all" /><style type="text/css" media="all">@import "../../images/npi.css"; @import "../../images/ki/articles.css";</style><title>DeXPeriX Home Page : Статьи > Delphi > Несколько советов начинающему программисту в Delphi</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+ru.xml" type="application/rss+xml" /><script type="text/javascript" src="../../images/highlight/highlight.js"></script><script type="text/javascript">initHighlightingOnLoad('html', 'css', 'php', 'xml', 'delphi', 'cpp', 'sql', 'bash');</script></head><body><div id="header"><div id="top"><h1></h1><div id="translate"><ul id="lan"><li class="ru"><a href="soviet+npi+ru.html" title="ru"><img src="../../images/ki/ru.gif"></a></li><li id="ukazatel" class="clearer"></li><li></li></ul> </div><span>Linux, Hacking, Sources, News, Free Software, Photo and more...</span></div></div><div id="area"><ul id="menu"><li class="Новости"><a href="../../news/index+npi+ru.html" title="Новости"><img src="../../images/ki/home.jpg" alt="Новости" /></a></li><li><a href="../../blog/index+npi+ru.html" id="m1ru" title="Блог"></a></li><li><a href="../../articles/index+npi+ru.html" id="m2ru" title="Статьи"></a></li><li><a href="../../sources/index+npi+ru.html" id="m3ru" title="Исходники"></a></li><li><a href="../../soft/index+npi+ru.html" id="m4ru" title="Программы"></a></li><li><a href="../../projects/index+npi+ru.html" id="m5ru" title="Проекты"></a></li><li><a href="../../tranlations/index+npi+ru.html" id="m6ru" title="Переводы"></a></li><li><a href="../../photo/index+npi+ru.html" id="m7ru" title="Фотоальбом"></a></li><li id="search"><form id="form" action="http://www.google.com/cse" method="get" name="lse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:x64p4f5z3o8" /><input type="hidden" name="ie" value="UTF-8" /><input class="text" type="text" name="q" value=""/><input class="sub" type="submit" value="" name="sa"></form></li></ul><div id="content"><div id="bg_right"><div id="topic"><div id="line"></div><h2>Несколько советов начинающему программисту в Delphi</h2> <div id="topic-list"><div id="contdata"><p>Идея написания этой статьи родилась у меня очень просто. Я довольно много общаюсь на форумах. И, как ни странно, довольно у многих людей возникают очень похожие вопросы. Ответить на хотя бы часть из них я и попытаюсь в этой статье. Заодно я хочу поделиться опытом, как сделать программы наиболее быстрыми, красивыми, защищёнными. Ну что ж, приступим:
+<br />
+<br />1) Не забывай архивировать свои программы специальными ЕХЕ-архиваторами – они не только уменьшают место, занимаемое на диске, но и увеличивают скорость выполнения программ. Почему же увеличивают скорость, ведь программе нужно время для распаковки? Так то оно так, но сама программа становится намного меньше и поэтому намного быстрее запускается, предварительно аккуратненько распаковав себя в память.
+<br />
+<br />Примеры таких программ:
+<br />
+<br />ASPack, скачать можно на официальном сайте программы - http://aspack.com - ASPack Software
+<br />
+<br />UPX - google.com
+<br />
+<br />PECompact  - http://bitsum.com (официальный сайт разработчика)
+<br />
+<br />2) Если программа важная - защищай от взлома. О защите твоего софта есть много статей, так что будут только примеры программ.
+<br />
+<br /> Юзать читый UPX с его досовским интерфейсом неудобно – удобнее всего использовать какую-нибудь Windows оболочку. Она прилагается к архиву UPX , так что отдельно её скачивать не нужно. В данной оболочке есть функция защиты программы от декомпрессии. Также можно использовать специальные программы для защиты, например, ASProtect - ASPack Software, т.е. произведено тем же человеком, что и ASPack. Внимание! ASPack и ASProtect конфликтуют между собой, так что придётся выбирать – либо хорошее сжатие, либо более-менее хорошая защита. Скачать ASProtect можно на http://www.aspack.com.
+<br />
+<br />Как вообще работают такие программы? Принцип программы прост – чтобы нельзя было что-то запустить, это что-то надо сломать. То есть они немного «портят» исполняемый файл – сама исполняемая часть не изменяется, или изменяется незначительно, а вот заголовок портится более сильно. Т.е. Windows ещё понимает, что этот файл можно запускать, а программы-взломщики (дизассеблеры) уже так не считают. ВНИМАНИЕ! Опытному взломщику такая защита – не помеха! Серьёзный хакер легко взломает любую стандартную защиту. Этими методами вы сможете обломать лишь «детей» и взломщиков средней руки. Но именно такими взломщиками сейчас и переполнена сеть. Не каждый сможет стать серьёзным взломщиком. Так что большая часть всё-таки останется в пролёте J
+<br />
+<br />По статистике легче всего разархивировать программу, упакованную чистым UPX – прям в самой программе-упаковщике есть такая опция. Однако если использовать UPX Shell и возможность «Защитить файл от декомпрессии», то разархивировать такой файл будет довольно сложно. По крайней мере программ, распаковывающих такой софт, я не видел <img src="../../images/smilies/sad.png" align="top" height="20" width="20" title=":(" alt=":(" />
+<br />
+<br />Очень легко разархивировать программу, упакованную ASPack’ом – есть даже программа для распаковки ASPack – ASPackDie. Тремя кликами ты сможешь вскрыть любую программу, упакованнкю этим архиватором.
+<br />
+<br />ASPackDie можно скачать на страничке разработчика этой программы - http://y0da.cjb.net . Там также есть неплохие исходники. Мы ещё вернёмся к этому сайту. Также ASPackDie можно скачать и с http://hh-team.h14.ru (я надеюсь, что найти этот файл на сайте ты сможешь уже сам <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" />. Ещё этот файл можно скачать с http://hh-team.h14.ru/downloads/aspackd.rar.
+<br />
+<br />Тяжелее всего разархивировать программу, ужатую PECompact’ом. В интеренете  есть программы - жалкие попытки универсально распаковать ужатые PECompact’ом файлы. В частности, тот же Y0da попытался написать такую программу (а вот и вернулись на http://y0da.cjb.net <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" /> ). Но когда я скачивал этот разархиватор, он даже близко не работал.
+<br />
+<br />3) Оформление программы тоже имеет важную роль. Чтобы оформить свою программу красиво, можно самому рисовать красивые картинки, писать мощные компоненты. Если сделать это – то ваша программы будет мощна, красива, уникальна (степень каждого признака зависит от прямоты твоих рук <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" /> ). Но это очень долго, тяжело, да и не у каждого руки прямые. Есть альтернативный вариант – использовать скин движки. Каждый нормальный движок должен уметь полностью преобразовать форму под определённый скин и добавлять полную палитру компонентов, поддерживающих этот движок. Так же должно поддерживаться неединичное количество скинов. Таких движков в интернете довольно много. Но некоторые из них слишком дорого стоят, некоторые слишком глючные, а некоторые только под определённую версию Windows. Так вот такой тебе совет, если юзаешь сторонний скин движок - сразу юзай нормальный, чтобы потом  не было проблем ни со скинами, ни с регистрацией, ни с версией Windows.
+<br />
+<br />Для оформления твоих программ советую тебе использовать движок AlphaSkins - http://www.alphaskins.com/index_rus.php (ссылка ведёт на стараницу закачки на официальном сайте программы). Во-первых, он явный лидер среди своих аналогов, скины всё-время обновляются и уже имеется неплохой архив. Во-вторых написан очень толково (я по крайней мере глюков не встречал <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" /> ). В-третьих бесплатен для жителей СНГ (так написано на официальном сайте программы, к моменту твоего прочтения статьи всё может измениться L ). Как альтернативу могу предложить FreeSkinEngine – он тоже бесплатный, но страшно глючный. Найти его можно на сайте http://bib.com.ua .
+<br />
+<br />4) По возможности не забывай сохранять нужные свойства своей программы в отдельный файл. Согласись, очень неудобно, когда при запуске программы долго её настраиваешь, подбиваешь под себя, а потом при следующей загрузке всё это приходится делать заново, так как ничего не сохранилось. Юзеры этого очень не любят. Для различных программ нужно сохранять различные настройки. Чаще всего нужно сохранить ширину, высоту и позицию (Left и Top) форм программы. Также по возможности надо стараться сохранять содержимое CheckBox’ов – их настройка наиболее кропотлива. Для сохранения этих данных удобнее всего использовать INI-файлы. Они просты и удобны в использовании, невелики по размеру. Об использовании INI-файлов это, как говорится, отдельная статья <img src="../../images/smilies/smile.png" align="top" height="20" width="20" title=":)" alt=":)" /> . Найти таковую можно на http://x-planet.ru. 
+<br />
+<br />Также возможно сохранение в базу данных, но это не очень удобно и громоздко + размер твоей программы существенно увеличится. Но если ты уже используешь БД в своей программе, то тебе что, табличку лишнюю создать жалко что-ли?
+<br />
+<br />Ещё есть возможность сохранять параметры окна при помощи каких-либо вспомогательных программ или компонентов. Пример можешь взять на http://hh-team.h14.ru в разделе Download.
+<br />
+<br />5) Довольно часто люди просят дать посмотреть твой исходник. Так вот, если считаешь его очень нужным, или написанным в очень дурном тоне – лучше никому его не давай. Некоторые люди могут помочь, объяснить что-либо, показать признаки дурного тона. А некоторые могут просто засмеять тебя, или просто кинуть. Такое бывает довольно редко, и люди чаще всего стараются помочь друг другу. Но разве тебе надо, чтобы потом твой исходник продавали на базаре и за это не платили тебе ни гроша? 
+<br />
+<br />Если не уверен, лучше не давай – отдать всегда успеешь, а назад потом ничего не вернёшь…
+<br />
+<br />Со временем исходники кажутся самому себе всё более и более извратными, но ты всё более и более понимаешь, насколько многому ты научился на этих исходниках, как они тебе помогли.
+<br />
+<br />6) Перед написанием проги убедись, с какой целью ты её пишешь. В связи с этим выбором себя и веди. Ты не сможешь продавать игру, сделанную ради учёбы, за бешенные бабки, хотя именно на ней ты и научишься программировать и получишь много опыта.  И наоборот, работа за деньги может оказаться очень даже скучной и бесполезной в плане твоего развития, хотя может значительно поднять материальное состояние. 
+<br />
+<br />Также нужно трезво оценивать время, требуемое тебе для написания твоей программы, силы, потраченные на неё. Программа может очень сильно увлечь – ты будешь хотеть добавлять всё больше и больше новых функций и возможностей, тратить на неё все больше и больше времени. А к тому времени, когда ты её допишешь, фирма-конкуррент уже может дописать свой аналог этой программы и во всю его продавать. Даже учебные программы могут сильно отвлечь от других дел: понятно, что ради написания супер-крутого текстового редактора не стоит бросать институт. 
+<br />
+<br />Нужно правильно оценивать нужность твоей программы – ты не сможешь сам написать текстовый редактор лучше, чем  Microsoft написали Word: они и времени уделяют этому больше и средства на это уходят огромные. Вместо написания огромной, но глючной и ненужной программы, лучше написать маленькую, или вообще плагин, но который будет реализовать что-то, чего ещё нет. Или это-то что-то будет намного лучше уже имеющегося.
+<br />
+<br />7) Не забывай, твоя программа - твой ребёнок. В твоих глазах она может казаться идеальной, прекрасной и сверх-нужной, а на самом деле быть ужасно глючной, ненужной и морально уродливой. Если ты писал такую программу, чтобы отшлифовать свои навыки в программировании - не расстраивайся, ты многое узнал <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" />.  
+<br />
+<br />Но про отладку и очистку от глюков никогда не забывай. Довольно часто это занимает намного больше времени, чем написание текста программы...
+<br />
+<br />Вообще, лучше отлаживать программу сразу в процессе написания – сразу помнишь все глюки и проблемы. Если же сначала написать программу, а уже потом начинать её отлаживать, то это займёт намного больше сил и времени, да к тому же ещё программа получится ужасно глючной, т.к. ты обязательно что-то забудешь <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" />. Конструкции try … except, try…finally тоже лучше расставлять в процессе написания. Также в них надо стараться добавлять как можно меньше текста – это облегчит не только читаемость программы, но и поможет компиллятору. По возможности лучше пользоваться отдельными проверками для различных случаев. Например, можно написать
+<br />
+<br />Var
+<br />  a,b: byte;
+<br />begin
+<br />…
+<br />
+<br />try
+<br />   a:=a div b;
+<br />except
+<br />  Application.MessageBox(‘Error’,’Error’,0);
+<br />  …
+<br />end;
+<br />
+<br /> 
+<br />и читаться этот код будет довольно легко и, вроде бы понятно – мы пытаемся избежать деления на 0. Но с другой стороны, могут возникнуть и другие ошибки, о которых мы не будем знать. Да и компиллятору компиллить такой код намного сложнее, чем этот:
+<br />
+<br /> 
+<br />Var
+<br />  a,b: byte;
+<br />begin
+<br />…
+<br />If (a>=0) and (b>0) Then  a:=a div b
+<br />Else Application.MessageBox(‘Error’,’Error’,0);
+<br />…
+<br />end;
+<br />
+<br />Вообщем, никогда не забывай оптимизировать свои программы. Я только чуть-чуть затронул тему оптмизации – на эту тему статей уже навалом, так что читай и учись <img src="../../images/smilies/wink.png" align="top" height="20" width="20" title=";)" alt=";)" />
+<br />
+<br />В этой статье я затронул лишь основные вопросы, многое мог забыть. Но тем не мене я решил помочь людям разобраться в таком нелёгком деле, как программирование. Скорее всего, ты не нашёл в этой статье чего-то, что тебя интересовало бы. Но это ещё не конец. Продолжение следует! Пиши в письмах, что ты хотел бы узнать, стучи в аську, заходи к нам на форум – команда HH-Team всегда придёт на помощь. Если я не буду чего-либо знать, то это обязательно будет знать другой тимовец, и он поделится с тобой своими знаниями.
+</p></div><div id="contdata"><h2 id="commentsform">Оставить комментарий</h2><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="16" /><input type="hidden" name="uid" value="26" />Имя (ник):</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш ник или реальное имя. Будет показано в заголовке комментария )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш e-mail. Используется только для связи с Вами администрации. Показан НЕ будет )</small></td></tr><tr><td>Сайт, ICQ или Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Это поле будет отображено в заголовке комментария рядом с Вашим именем )</small></td></tr><tr><td>Ваша оценка:</td><td><select name="rathing" size="1"><option value="0" selected="selected">Нет оценки</option><option value="1">Ужасно</option><option value="2">Плохо</option><option value="3">Нормально</option><option value="4">Хорошо</option><option value="5">Отлично</option></select></td></tr><tr><td colspan="2"><small>( Как Вы оцениваете данный материал? По умолчанию оценка не ставится )</small></td></tr><tr><td colspan="2">Введите число, изображённое на картинке <img src="http://dexperix.net/scripts/image.php?id=16" width="90" height="30" align="middle" class="captcha" alt="Image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Текст комментария:</td></tr><tr><td colspan="2" align="center"><textarea name="text"></textarea><br /><input type="submit" value="Оправить комментарий" /></td></tr></table></form></div><div id="reklama"><!--ADVERT_TEMPLATE--></div></div> </div><div id="topic_left"><div id="line_l"></div><div id="info_left"><h3>Дизайн</h3><ul id="l_info"><li><a href="soviet+blp+ru.html">:: Black Purple</a></li><li><a href="soviet+gray+ru.html">:: Gray Text</a></li><li><a href="soviet+npi+ru.html">:: New Pictures</a></li></ul><h3>Друзья</h3><ul id="l_info"><li><a href="http://coderszone.info" target="_blank">:: CodersZone.Info</a></li></ul><h3>Счётчики</h3><ul id="l_info"><li><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--></li><li><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</li></ul></div></div></div><div id="paw"></div></div><div id="add_menu"><ul id="menu_right"><li><a href="../alg/index+npi+ru.html" id="algru" title="Алгоритмы"></a></li><li><a href="../linux/index+npi+ru.html" id="linuxru" title="Linux"></a></li><li><a href="../delphi/index+npi+ru.html" id="delphiru" title="Delphi"></a></li><li><a href="../php/index+npi+ru.html" id="phpru" title="PHP кодинг"></a></li><li><a href="../hack/index+npi+ru.html" id="hackru" title="Хакинг"></a></li><li><a href="../track-music/index+npi+ru.html" id="track-musicru" title="Музыка"></a></li><li><a href="../diz/index+npi+ru.html" id="dizru" title="Дизайн"></a></li><li><a href="../instr/index+npi+ru.html" id="instrru" title="Инструкции"></a></li><li><a href="../other/index+npi+ru.html" id="otherru" title="Другие"></a></li></ul></div></div><div id="bottom"><div id="footer"><ul id="f_left"><li class="ukz"></li><li class="copyright">Copyright &copy; <span>2005-2009</span> by  <a href="http://dexperix.net">DeXPeriX</a></li></ul><ul id="f_right"><li class="icq">606 - 986</li><li class="jabber"><a>root<span>@</span>dexp.in</a></li></ul></div></div></body></html>

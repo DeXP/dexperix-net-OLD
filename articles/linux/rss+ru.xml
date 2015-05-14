@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Linux > Операционная система Linux</title>
+		<link>http://dexperix.net</link>
+		<description>После долгого использования window$ довольно тяжело работать в Linux. Статьи данного раздела призваны облегчить жизнь людям, переходящим из window$ в Linux, а также помочь некоторым закоренелым линуксоидам.
+Также хочу сказать, что этот раздел "живой" - т.е. статьи буду стараться поддерживать в максимально актуальном состоянии и постоянно обновлять.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Отладка программ в (g)Vim</title>
+			<pubDate>Sun, 12 Sep 2007 00:00:00 +0300</pubDate>
+			<link>debugging_in_vim+npi+ru.html</link>
+			<guid>debugging_in_vim+npi+ru.html</guid>
+			<description><![CDATA[Vim не поддерживает отладку С++ программ в своей сборке по умолчанию. Однако, есть множество проектов, добавляющих этот функционал. Один из них и рассмотрен в этой статье.]]></description>		</item>
+		<item>
+			<title>Разработка приложений на С# в Linux среде</title>
+			<pubDate>Sun, 04 Sep 2007 00:00:00 +0300</pubDate>
+			<link>razrab_csharp_linux+npi+ru.html</link>
+			<guid>razrab_csharp_linux+npi+ru.html</guid>
+			<description><![CDATA[C# - язык для разработки .NET  приложений от Microsoft. Если название последней фирмы Вас не испугало и всё-таки нужно писать эти приложения - можно делать это в любимой ОС. В статье рассмотрен необходимый софт, а также создаётся первая программа.]]></description>		</item>
+		<item>
+			<title>Обзор основных Linux-программ</title>
+			<pubDate>Sun, 19 May 2007 00:00:00 +0300</pubDate>
+			<link>lfb+npi+ru.html</link>
+			<guid>lfb+npi+ru.html</guid>
+			<description><![CDATA[При переходе из window$ много чего непонятно в мире Linux. Больше всего пугает абсолютно новый и неизвестный софт. Довольно много пользователей, попытавшихся перейти в Linux, перепугавшись новизны программ так и не перешли в Linux. В этой статье я постарался рассмотреть самые используемые и полезные программы. А главное, их иногда долго ищут! Зачем искать - читайте и используйте на здоровье! :)
+</p><p></p><p>В статье рассмотрен только GUI-шный (неконсольный) софт. А также максимально дружелюбный и используемый новичками софт. Поэтому если Вы профи и не нашли тут своей программы - пишите в комментах и она обязательно появится в следующей статье ;)]]></description>		</item>
+	</channel>
+</rss>

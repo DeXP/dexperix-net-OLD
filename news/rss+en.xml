@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : News</title>
+		<link>http://dexperix.net</link>
+		<description>Welcome!
+
+You are entered to site about programming, operation systems and about computer at all. Enjoy.
+
+Warning! Most of content translated to english by Google. 	
+But gradually the contents will be translated into English cultural</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>New programms, source and functionality</title>
+			<pubDate>Sun, 05 Apr 2009 00:00:00 +0300</pubDate>
+			<link>veren-added+npi+en.html</link>
+			<guid>veren-added+npi+en.html</guid>
+			<description><![CDATA[The main contents of the site - the articles. And they now appear in a new engine line. In general, see the updates.
+</p><p>Also added a new program. In the near future will begin to open new sections]]></description>		</item>
+		<item>
+			<title>New articles section: "Track music"</title>
+			<pubDate>Sun, 26 Nov 2008 00:00:00 +0300</pubDate>
+			<link>track-music-section-added+npi+en.html</link>
+			<guid>track-music-section-added+npi+en.html</guid>
+			<description><![CDATA[There is a new section of articles - Track music. You can find information about the process of creating computer music. And the first article was "Introduction to the Schism Tracker", which can help beginners build their first musical composition. This article is first article, available in English!
+</p><p>Also gradually supplemented source, programs, photographs
+</p><p>Work is now in full swing - starting next year on the site may display a lot of interesting material]]></description>		</item>
+		<item>
+			<title>Great updates</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>great_updates_2008+npi+en.html</link>
+			<guid>great_updates_2008+npi+en.html</guid>
+			<description><![CDATA[In the section on "Sources" at the site of tiles and C++ Image Size - module to work with PNG and JPEG images, which can check the type of image and issue its size in pixels.
+</p><p>Also elsewhere version 2.0 simulator planner OS dxPlanner. He also like Image Size is distributed under licence GPL
+</p><p>Recently I was given a partial player Ario translated into Russian. More information about this can be seen in "Translation".
+</p><p>Also at the site gradually returning photo album. The system is already fully add photo, left score DB photographs.]]></description>		</item>
+		<item>
+			<title>New site</title>
+			<pubDate>Sun, 20 Apr 2008 00:00:00 +0300</pubDate>
+			<link>new_site_is_shown+npi+en.html</link>
+			<guid>new_site_is_shown+npi+en.html</guid>
+			<description><![CDATA[New version of this site were published. There are only news available in engllish. Also you can't leave comments. Gradually, the content and functionality will return.]]></description>		</item>
+		<item>
+			<title>English site opened!</title>
+			<pubDate>Sun, 08 Apr 2008 00:00:00 +0300</pubDate>
+			<link>content_editing+npi+en.html</link>
+			<guid>content_editing+npi+en.html</guid>
+			<description><![CDATA[English site is actually mirror of russian one. So if you could read russian - do it.
+To make this mirror, almost all content be remaked and translated. Some unusefull content were deleted.]]></description>		</item>
+		<item>
+			<title>New programm</title>
+			<pubDate>Sun, 06 Jul 2006 00:00:00 +0300</pubDate>
+			<link>new_programm+npi+en.html</link>
+			<guid>new_programm+npi+en.html</guid>
+			<description><![CDATA[Trojan.BackDoor.RemoteAdm site has been posted to this site. Supplied with the sources and was created to replace all known RAdmin (because the latter is a shareware, my audience - OpenSource :) ).  If you have local network and you too lazy to get up because of the computer table to help the next sheet-readers do not regret it :) :D]]></description>		</item>
+		<item>
+			<title>New source</title>
+			<pubDate>Sun, 08 Feb 2006 00:00:00 +0300</pubDate>
+			<link>new_source+npi+en.html</link>
+			<guid>new_source+npi+en.html</guid>
+			<description><![CDATA[Today I wrote a program to find the maximum flow in the graf, and decided to put on the site. A source archive is at 2 languages: C + + and Delphi. There very few comments, but the code is written  with help of the KOrmans' book: "Algorithms. Construction and analysis."]]></description>		</item>
+		<item>
+			<title>Gray design is really grey now</title>
+			<pubDate>Sun, 20 Jan 2006 00:00:00 +0300</pubDate>
+			<link>gray_design_is_really_gray_now+npi+en.html</link>
+			<guid>gray_design_is_really_gray_now+npi+en.html</guid>
+			<description><![CDATA[Completely redesigned grey colour scheme textual design - design now is the brighter tones. I hope you like it.]]></description>		</item>
+		<item>
+			<title>New article</title>
+			<pubDate>Sun, 13 Jan 2006 00:00:00 +0300</pubDate>
+			<link>new_article+npi+en.html</link>
+			<guid>new_article+npi+en.html</guid>
+			<description><![CDATA[Artice "Methods of storing graphs in computer's memory" were added. If you are even slightly familiar with the theory of graphs, you will be interested to read the article. Perhaps there you will be able to obtain something interesting.]]></description>		</item>
+		<item>
+			<title>One more design</title>
+			<pubDate>Sun, 05 Dec 2005 00:00:00 +0300</pubDate>
+			<link>one_more_design+npi+en.html</link>
+			<guid>one_more_design+npi+en.html</guid>
+			<description><![CDATA[The new "Gray Text" design were added to this site. Almost month it were developed and putted to site.
+</p><p>As you see, every design in this site has oun color, positioning, JavaScript policy. If you want to change all design - you'll made it. And change all, but not only color.]]></description>		</item>
+		<item>
+			<title>BitDefender 9.0 Russificator</title>
+			<pubDate>Sun, 14 Oct 2005 00:00:00 +0300</pubDate>
+			<link>bitdefender-9-0-russificator+npi+en.html</link>
+			<guid>bitdefender-9-0-russificator+npi+en.html</guid>
+			<description><![CDATA[BitDefender 9.0 Russificator were released. It's only translation of BitDefender antivirus to russian language. So, it helphul only for russian-speaking peole.
+</p><p>But I think, that programs must be transnational. And I try to translate some to my native language.]]></description>		</item>
+	</channel>
+</rss>

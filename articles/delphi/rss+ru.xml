@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Delphi > Программирование в среде Delphi</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи по программированию в среде Delphi. В основном эти статьи для начинающих, однако и настоящий профи, возможно, найдёт для себя что-нибудь интересненькое...</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Создание бегущей строки в Delphi</title>
+			<pubDate>Sun, 26 Sep 2005 00:00:00 +0300</pubDate>
+			<link>string+npi+ru.html</link>
+			<guid>string+npi+ru.html</guid>
+			<description><![CDATA[статья для начинающих. Расписано два способа создания бегущей строки. Знание HTML очень приветствуется.]]></description>		</item>
+		<item>
+			<title>Несколько советов начинающему программисту в Delphi</title>
+			<pubDate>Sun, 17 Jun 2005 00:00:00 +0300</pubDate>
+			<link>soviet+npi+ru.html</link>
+			<guid>soviet+npi+ru.html</guid>
+			<description><![CDATA[7 основных советов начинающему программисту в Delphi. Эта статья - расписанный ответ с форума. Не полна, далеко не совершенна, но может быть полезна]]></description>		</item>
+		<item>
+			<title>Создание градиентной заливки</title>
+			<pubDate>Sun, 11 Mar 2005 00:00:00 +0300</pubDate>
+			<link>gradient+npi+ru.html</link>
+			<guid>gradient+npi+ru.html</guid>
+			<description><![CDATA[Полностью расписанный и объяснённый исходник градиентной заливки формы. Оригинальный исходник написал Y0da]]></description>		</item>
+	</channel>
+</rss>

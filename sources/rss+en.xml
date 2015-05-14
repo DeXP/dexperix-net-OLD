@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Sources</title>
+		<link>http://dexperix.net</link>
+		<description>Here you can find a variety of sources written in Delphi, C + +, PHP, etc.</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Words 2 Brainfuck</title>
+			<pubDate>Sun, 09 Aug 2008 00:00:00 +0300</pubDate>
+			<link>w2bf+npi+en.html</link>
+			<guid>w2bf+npi+en.html</guid>
+			<description><![CDATA[A little programm, that translates string constants to Brainfuck programming language.]]></description>		</item>
+		<item>
+			<title>C++ Image Size</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>imagesize+npi+en.html</link>
+			<guid>imagesize+npi+en.html</guid>
+			<description><![CDATA[C++ imagesize - read the dimensions of an image in PNG and JPEG files.
+</p><p>Requirements: libstdc++ only]]></description>		</item>
+		<item>
+			<title>Report to work on exchange rate "Systems of computer graphics"</title>
+			<pubDate>Sun, 01 Jan 2008 00:00:00 +0300</pubDate>
+			<link>kursach-skg+npi+en.html</link>
+			<guid>kursach-skg+npi+en.html</guid>
+			<description><![CDATA[The report is written entirely in LaTeX and meets many exUSSR standarts. It may be useful in solving various problems and difficulties adapting TeX / LaTeX document to the proper mind <br>
+By the way, normal AutoLISP program on the Internet now too rarely found. So maybe and even the very essence of course who will help]]></description>		</item>
+		<item>
+			<title>Kruskal's algorithm</title>
+			<pubDate>Sun, 25 Feb 2006 00:00:00 +0300</pubDate>
+			<link>kruskal+npi+en.html</link>
+			<guid>kruskal+npi+en.html</guid>
+			<description><![CDATA[Not a bad implementation of the algorithm, looking for minimal sewing tree. Graf kept a list of ribs. Used a rapid screening (QSort). To work with sets realized Forest disjoint sets.]]></description>		</item>
+		<item>
+			<title>The maximum flow</title>
+			<pubDate>Sun, 08 Feb 2006 00:00:00 +0300</pubDate>
+			<link>MaxPotok+npi+en.html</link>
+			<guid>MaxPotok+npi+en.html</guid>
+			<description><![CDATA[	
+Sources program, located in the maximum flow graph. Sources presented at 2 languages: C + + and Delphi (Pascal). Search maximum flow method of Ford-Falkersona. Search queue along the way. Graf kept contiguity list. The required memory - 6E +4 V (where E - the number of arcs in box; V - the number tops). The complexity of the algorithm - O (E ^ 2 * V).]]></description>		</item>
+		<item>
+			<title>Dijkstra Sourcecode</title>
+			<pubDate>Sun, 27 Dec 2005 00:00:00 +0300</pubDate>
+			<link>dijkstra+npi+en.html</link>
+			<guid>dijkstra+npi+en.html</guid>
+			<description><![CDATA[Sourcecode one of the most famous algorithms. It is looking for the shortest way in box tops from any before each summit. In this example, Earl kept in contiguity list, and search the minimum
+element organized binary heap. Heap approved by Minyaylov
+Vladimir - silver winner
+World Olympiad school programming in 2005, gold winner World Olympiad school programming in 2006.]]></description>		</item>
+		<item>
+			<title>LongMath Unit 2.1</title>
+			<pubDate>Sun, 04 Nov 2005 00:00:00 +0300</pubDate>
+			<link>LongMath+npi+en.html</link>
+			<guid>LongMath+npi+en.html</guid>
+			<description><![CDATA[Long arithmetic unit for Delphi. Realized: addition, subtraction, multiplication, division. All possible and fractional numbers of different sign. <br>
+As in the previous young gross errors were found, the entire unit has been rewritten. Was written in Turbo Pascal.]]></description>		</item>
+		<item>
+			<title>WinApiCalc by DeXPeriX</title>
+			<pubDate>Sun, 17 Aug 2005 00:00:00 +0300</pubDate>
+			<link>WinApiCalc+npi+en.html</link>
+			<guid>WinApiCalc+npi+en.html</guid>
+			<description><![CDATA[WinApi programming example. <br> In this example author working (creation of components) with: <br> <br>
+  1) Form <br>
+  2) The main menu (Menu) <br>
+  3) Buttons (Button) <br>
+  4) Redaktiruemoe box (Edit) <br>
+  5) label (Label) <br>
+  6) Timer (Timer). <br> <br>
+  There is also an example of using a standard window (MessageBox) and the withdrawal of some standard sounds (Beep). The entire source perfectly commented. <Br>
+  This example was written more as article than as a source - so that the code is that Reading]]></description>		</item>
+	</channel>
+</rss>

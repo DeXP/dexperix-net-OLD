@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Articles > Instructions</title>
+		<link>http://dexperix.net</link>
+		<description>This section lined "Instructions" to my LAN. They rely on, so that even the most shrewd user nothing has been able to set his computer after reinstall windows, etc.
+Some of the articles are adapted to a more or less universal type, and some lined live in, as we have in LAN.
+If you are LAN-administrator and you lazily write docks - NB in this section. Maybe you will find something for your users ...</description>
+		<language>en</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+	</channel>
+</rss>

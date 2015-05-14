@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Программы > Бесплатные > Бесплатные программы</title>
+		<link>http://dexperix.net</link>
+		<description>Здесь Вы сможете увидеть и скачать все мои бесплатные и некоммерческие программы. В основном они писались для себя либо для практики в программировании. Однако некоторые программы вполне могут вызвать у Вас интерес.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>VerEn - Vertex Engine</title>
+			<pubDate>Sun, 04 Apr 2009 00:00:00 +0300</pubDate>
+			<link>vertex-engine+npi+ru.html</link>
+			<guid>vertex-engine+npi+ru.html</guid>
+			<description><![CDATA[Vertex Engine - небольшое OpenGL приложение, предназначенное для визуализации объектов механики материалов. Приложение не окончено и представляет интерес лишь как симбиоз OpenGL, SDL, guichan и других библиотек на живом примере.
+</p><p>Приложение полностью кроссплатформенное. Архив содержит исходные коды, исполняемые файлы под Windows и Linux, презентацию на русском языке.
+</p><p>Использованные библиотеки: OpenGL, SDL, guichan, libxml2, libpng.]]></description>		</item>
+		<item>
+			<title>dxMemMen</title>
+			<pubDate>Sun, 15 Sep 2008 00:00:00 +0300</pubDate>
+			<link>dxmemmen+npi+ru.html</link>
+			<guid>dxmemmen+npi+ru.html</guid>
+			<description><![CDATA[dx Memory Manager - эмулятор планировщика оперативной памяти ОС.
+</p><p>Имеет только англоязычный интерфейс.
+</p><p>Реализованы алгоритмы:
+</p><p>- First fit
+</p><p>- Worst fit
+</p><p>- Best fit]]></description>		</item>
+		<item>
+			<title>dxPlanner</title>
+			<pubDate>Sun, 11 May 2008 00:00:00 +0300</pubDate>
+			<link>dxplanner+npi+ru.html</link>
+			<guid>dxplanner+npi+ru.html</guid>
+			<description><![CDATA[dxPlanner это программное обеспечение, которое имитирует процессы функционирования системы планирования ОС.
+Первоначально она была создана в качестве лабораторной работы в Гомельском государственном техническом университете имени Павела Сухого.
+</p><p>Реализованы следующие алгоритмы: 
+</p><p>- First Come First Serve
+</p><p>- Priority Round Robbin
+</p><p>- Non priority Round Robbin
+</p><p>- Shortest Job First
+</p><p>Также реализовано разделение критических секций, аналогичное работе семафоров.
+</p><p>Имеется только английский интерфейс пользователя.]]></description>		</item>
+		<item>
+			<title>EasyHider v 1.0</title>
+			<pubDate>Sun, 31 Aug 2006 00:00:00 +0300</pubDate>
+			<link>EasyHider+npi+ru.html</link>
+			<guid>EasyHider+npi+ru.html</guid>
+			<description><![CDATA[Приложенье из разряда "прияные мелочи, облегчающие нашу жизнь". Довольно часто панель задач забита "ненужными" приложениями. Т.е., они конечно, нужны, но должны висеть в фоне, а не на панели задач и должны просто не мешать пользователю. Эта программа позволяет вам скрыть/показать любое приложение. Программа также не требует инсталляции]]></description>		</item>
+		<item>
+			<title>OpenSource Tester v 1.0</title>
+			<pubDate>Sun, 06 Dec 2005 00:00:00 +0300</pubDate>
+			<link>OpenTester+npi+ru.html</link>
+			<guid>OpenTester+npi+ru.html</guid>
+			<description><![CDATA[Тест система с исходниками. Вопросы с ответами хранятся в INI-файле. Просле прохождения теста программа говорит количество правильных и неправильных ответов, а также процентное соотношение.]]></description>		</item>
+		<item>
+			<title>HHAutorunMake</title>
+			<pubDate>Sun, 28 Aug 2005 00:00:00 +0300</pubDate>
+			<link>HHAutorunMake+npi+ru.html</link>
+			<guid>HHAutorunMake+npi+ru.html</guid>
+			<description><![CDATA[Иногда нужно сделать авторан, использующий HTML странички, но не использующий веб-браузер по умолчанию (т.к. нужен уникальный, красивый дизайн, или мощное звуковое сопровождение). Если нет времени на написание своей программы, или Вам неохота подбирать красивый и удобный дизайн - то эта программа для Вас.
+</p><p>Программа имеет дружественный интерфейс и встроенный медиаплеер, по возможностям близкий к Winamp'у. Возможные настройки: изменение иконки и имени приложения на панели задач, изменение начальной страницы, полностью настраиваемый язык интерфейса, изменение порядка кнопок на главной панели, произношение голосом основных команд (работает на Windows NT, 2k, XP, Win9x с SAPI SDK ) , настройка медиаплеера (просто гляньте в файл default.dtp). Также есть возможность искать фразы по текущей странице и использовать буфер обмена.]]></description>		</item>
+		<item>
+			<title>Kалькулятор for Windows</title>
+			<pubDate>Sun, 02 Mar 2005 00:00:00 +0300</pubDate>
+			<link>CalcForWindows+npi+ru.html</link>
+			<guid>CalcForWindows+npi+ru.html</guid>
+			<description><![CDATA[Обычный инженерный калькулятор. В отличие от стандартного калькулятора Windows имеет приятное оформление и более удобную систему работы с тригонометрией.]]></description>		</item>
+	</channel>
+</rss>

@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="author" content="Dmitry Hrabrov a.k.a. DeXPeriX" /><link rel="stylesheet" type="text/css" href="../../images/graytext.css" title="DeXPeriX Home Page" /><title>DeXPeriX Home Page : Статьи > Алгоритмы > Структура данных бинарная куча</title><link rel="alternate" title="DeXPeriX Home Page RSS" href="rss+ru.xml" type="application/rss+xml" /></head><body><div id="bordtable"><div id="rammer"><div id="header"><div class="pred"><pre class="prek"><a href="http://dexperix.net" class="prelink">#########  ########## ###    ### #########  ########## #########  ########### ###    ###
+#+#    #+# #+#        #+#    #+# #+#    #+# #+#        #+#    #+#     #+#     #+#    #+#
+#+#    #+# #+#         #+#  #+#  #+#    #+# #+#        #+#    #+#     #+#      #+#  #+# 
+#+#    #+# #+#+#+#+     +####+   #+#+#+#+#  #+#+#+#+    +#+#+#+#:     #+#       +####+  
+#+#    #+# #+#         +#+  +#+  #+#        #+#        +#+    +#+     #+#      +#+  +#+ 
+#+#    #+# #+#        #+#    #+# #+#        #+#        #+#    #+#     #+#     #+#    #+#
+#########  ########## ###    ### ###        ########## ###    ### ########### ###    ###
+
+          #   #  ###  #   # #####    ####     ##   ###  #####          
+     #    #   # #   # ## ## #_       #   #   # #  #     #        #     
+#         ##### #   # ## ## ###      #   #  #  # #   ## ###           #
+     #    #   # #   # # # # #        ####  #####  #  #  #        #     
+          #   #  ###  #   # #####    #     #   #   ###  #####          </a></pre></div></div><div id="menucol"><div class="menutop">.: Меню</div><a href='../../news/index+gray+ru.html' class="butmenulink">: Новости</a> <a href='../../blog/index+gray+ru.html' class="butmenulink">: Блог</a> <a href='../../articles/index+gray+ru.html' class="butmenulink">: Статьи</a> <a href='../../articles/alg/index+gray+ru.html' class="butmenulink">: - Алгоритмы</a> <a href='../../articles/linux/index+gray+ru.html' class="butmenulink">: - Linux</a> <a href='../../articles/delphi/index+gray+ru.html' class="butmenulink">: - Delphi</a> <a href='../../articles/php/index+gray+ru.html' class="butmenulink">: - PHP кодинг</a> <a href='../../articles/hack/index+gray+ru.html' class="butmenulink">: - Хакинг</a> <a href='../../articles/track-music/index+gray+ru.html' class="butmenulink">: - Музыка</a> <a href='../../articles/diz/index+gray+ru.html' class="butmenulink">: - Дизайн</a> <a href='../../articles/instr/index+gray+ru.html' class="butmenulink">: - Инструкции</a> <a href='../../articles/other/index+gray+ru.html' class="butmenulink">: - Другие</a> <a href='../../sources/index+gray+ru.html' class="butmenulink">: Исходники</a> <a href='../../soft/index+gray+ru.html' class="butmenulink">: Программы</a> <a href='../../soft/free/index+gray+ru.html' class="butmenulink">: - Бесплатные</a> <a href='../../soft/share/index+gray+ru.html' class="butmenulink">: - Коммерческие</a> <a href='../../soft/midlets/index+gray+ru.html' class="butmenulink">: - Мидлеты</a> <a href='../../projects/index+gray+ru.html' class="butmenulink">: Проекты</a> <a href='../../tranlations/index+gray+ru.html' class="butmenulink">: Переводы</a> <a href='../../photo/index+gray+ru.html' class="butmenulink">: Фотоальбом</a> <a href='../../photo/univer/index+gray+ru.html' class="butmenulink">: - Универ</a> <a href='../../photo/mozyr2007/index+gray+ru.html' class="butmenulink">: - Мозырь 2007</a> <a href='../../photo/gstu2008/index+gray+ru.html' class="butmenulink">: - Сухого 2008</a> <a href='../../photo/JeepTrial2008/index+gray+ru.html' class="butmenulink">: - Джип Триал</a> <a href='../../photo/drive/index+gray+ru.html' class="butmenulink">: - Драйв</a> <a href='../../photo/sea2008/index+gray+ru.html' class="butmenulink">: - Море 2008</a> <a href='../../photo/other/index+gray+ru.html' class="butmenulink">: - Другие</a> <a href='../../about-site/index+gray+ru.html' class="butmenulink">: О сайте</a> <div class="menubot">.: End Меню</div><div class="menutop">.: Дизайн</div><a href="binary_heap+blp+ru.html" class="butmenulink">: Black Purple</a><a href="binary_heap+gray+ru.html" class="butmenulink">: Gray Text</a><a href="binary_heap+npi+ru.html" class="butmenulink">: New Pictures</a><div class="menubot">.: End Дизайн</div><div class="menutop">.: Друзья</div><a href="http://coderszone.info" class="butmenulink" target="_blank">: CodersZone.Info</a><div class="menubot">.: End Друзья</div><div class="menutop">Поиск по сайту</div><form action="http://www.google.com/cse" class="lse"><input type="hidden" name="cx" value="015301063631066860216:x64p4f5z3o8" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" size="15" class="googlesearch" /><input type="submit" name="sa" value="Искать" class="gsbut" /></form><div class="menubot">.: Поиск по сайту</div></div><div id="contcol"><div class="houter"><div class="hn"><div class="ht">13.02.2006 :.</div><div class="hh">.: Структура данных бинарная куча</div></div><div class="cont"><p>Сегодня, как ни странно, мы будем делать кучу! :) Причём не обычную, а бинарную!
+</p><p>Для начала разберёмся, что же такое бинарная куча. Рaссмотрим на примере:
+</p><p><center><pre>     ( 1 )     
+    /     \    
+  (2)     (3)  
+  / \     / \  
+(4) (5) (6) (7)
+</pre></center>
+</p><p>Нам дано дерево с корнем в вершине с номером 1. У вершины 1 два ребёнка: 2 и 3. У вершины 2 и у вершины 3 тоже по два ребёнка (4;5 и 6;7 соответственно). Каждый элемент кучи состоит из двух составляющих: номер элемента и его значение. Пускай для простоты в нашей куче номера и будут являться значениями. Итак, основные правила кучи:
+</p><p>1) У каждой вершины должно быть ровно по 2 ребёнка 
+</p><p>2) Каждый ребёнок "хуже" своего отца. 
+</p><p>Исключением является нижний ряд кучи - у этих вершин нет детей. В тоже время, нижний ряд не обязательно будет полностью заполнен - элементов может просто не хватить. В таком случае может случиться так, что у одной вершины предпоследнего ряда не будет хватать одного ребёнка. Вот пример:
+</p><p><center><pre>       ( 1 )       
+      /     \      
+    (2)     (3)    
+    / \     / \    
+  (4) (5) (6) (7)  
+  /\   /           
+(8)(9)(10)         
+</pre></center>
+</p><p>Как видите, у вершины 5 всего один ребёнок (10) , но, тем не менее, данная куча правильна.
+</p><p>Теперь разберёмся, что же значит "хуже". В нашем случае, "хуже" означает больше. Т.е. дети по значению больше отца, а отец в нашей куче всегда меньше своих детей. И действительно, 1<2 и 1<3 (вершина 1 - отец) ; 2<4 и 2<5 ; 3<6 и 3<7 и т.д. Параметр "хуже" в различных задачах может быть различным, это зависит от того, что мы хотим получить. Дети по значению могут быть больше или меньше своих родителей. Т.е. "хуже" будет либо меньше, либо больше. В других задачах параметр "хуже" может быть и другим...
+</p><p>Итак, посмотрите на следующую кучу и скажите, правильная ли она:
+</p><p><center><pre>        ( 2 )       
+       /     \      
+     (5)      (3)    
+    /   \     / \    
+  (6)   (8) (4) (7)  
+  /\    / \  \       
+(9)(7)(10)(9)(4)     
+</pre></center>
+</p><p>Итак, что вы скажете, правильная ли это куча? В любом случае, ответ давать нельзя, пока не известен параметр сравнивая детей с родителями. Пускай в данной куче ребёнок должен быть больше либо равен своему отцу. А вот теперь ответ однозначный - данная куча правильная. Почему же? Ведь левый ребёнок вершины со значением 2 - 5 и он меньше правого ребёнка (3)! Это, конечно, так, но в правилах кучи нет никаких правил сравнивания детей! Главное, чтобы оба ребёнка были "хуже" своего родителя, а как они относятся между собой и на каких позициях стоят - всё равно...
+</p><p>С этой кучей разобрались, для закрепления знаний давайте рассмотрим ещё одну кучу:
+</p><p><center><pre>        ( 3 )       
+       /     \      
+     (5)      (3)    
+    /   \     /  \    
+  (6)   (5) (4)  (7)  
+  / \   / \  \   / \  
+(9)(7)(10)(9)(6)(8)(9) 
+</pre></center>
+</p><p>Параметр "хуже" у этой кучи такой же, как и у предыдущей кучи. Но эта куча неправильна, т.к. у вершины со значением 4 всего один ребёнок. Исправим эту кучу так, чтобы она стала правильной:
+</p><p><center><pre>         ( 3 )       
+      /         \      
+    (5)         (3)    
+   /   \        /   \   
+ (6)   (5)    (4)   (7) 
+ / \   /  \   /  \  /   
+(9)(7)(10)(9)(6)(8)(9)  
+</pre></center>
+</p><p>Вот теперь эта куча правильная...
+</p><p>Теперь разберёмся с нумерацией вершин. Вернёмся к первым двум пирамидам - у них значения совпадают с номерами вершин. На них можно увидеть, что нумерация вершин идёт слева направо. Это как будто мы выписываем все номера от 1 до количества вершин в линейку и в определённый момент строчка кончается - мы переходим на новую. Причём, как вы уже заметили, на каждом новом уровне (на строке) будет ровно 2 в степени (i-1) вершин, где i - номер уровня.
+</p><p>Теперь мы знаем основные правила кучи, знаем, как нумеруются вершины. Но как же хранить кучу в памяти компьютера? А вот для этого мы и учились правильно расстанавливать номера. При правильной расстановке у каждого элемента будет свой уникальный номер - почему бы нам ни хранить кучу линейным массивом? Запишем в линейный массив нашу последнюю кучу:
+</p><p><div class="centered">
+<center><table id="atab">
+<tr><td>
+&nbsp;Номер:&nbsp; </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td><td> 5 </td><td> 6 </td><td> 7 </td><td> 8 </td><td> 9 </td><td> 10 </td><td> 11 </td><td> 12 </td><td> 13 </td><td> 14 </td><td> 15 </td></tr> 
+<tr><td>
+&nbsp;Значение:&nbsp; </td><td> 3 </td><td> 5 </td><td> 3 </td><td> 6 </td><td> 5 </td><td> 4 </td><td> 7 </td><td> 9 </td><td> 7 </td><td> 10 </td><td> 9 </td><td> 6 </td><td> 8 </td><td> 9 </td><td> 0 </td></tr>
+
+</table></center>
+</div>
+</p><p>Вот и прекрасно. Советую вам самостоятельно попробовать восстановить бинарную кучу из этого массива. Ну как, получилось? Если не получилось, желательно всё-таки разобраться с этим моментом (попробовать самому записать кучу в линейный массив и восстановить из него). А мы идём дальше.
+</p><p>При работе с бинарной кучей очень часто нужно узнать ребёнка/отца данной вершины. На рисунке всё это хорошо видно, но как же быть, если куча записана в линейный массив? Конечно, можно восстановить рисунок, и по нему посмотреть нужные данные. Но от этого легче не станет - компьютер сам не сможет посмотреть на картинку и сказать, кто отец, а кто ребёнок, а каждый раз спрашивать человека не получится... В этом случае нам помогает одно интересное свойство кучи: k1=2*i и k2=2*i+1 (где i - номер вершины отца, k1 и k2 - номера вершин детей). По построению это свойство выполняется всегда. Можно посмотреть на примере кучи номеров:
+</p><p><center><pre>           ( 1 )       
+         /       \     
+       /           \   
+     (2)           (3) 
+    /    \        /    \  
+  (4)   (5)     (6)    (7)  
+  / \   /  \    /  \    / \  
+(8)(9)(10)(11)(12)(13)(14)(15)
+</pre></center>
+</p><p>Свойство проверить на любой вершине куче. Например, найдём детей вершины 6 &nbsp;=>&nbsp; i&nbsp;=&nbsp;6 &nbsp; => &nbsp;  k1 = 2 * i = 2 * 6 = 12, &nbsp; k2 = 2 * i + 1 = 2 * 6 + 1 = 13 &nbsp; => &nbsp; дети вершины с номером 6 имеют номера 12 и 13. Это действительно так! :) Можете проверить на любой вершине - свойство выполнится. Однако за существованием вершины с таким номером должны следить мы сами - если номер вершины превысил количество вершин в куче, то такая вершина не существует.
+</p><p>Мы умеем находить детей вершины. А как же найти родителя? Очень просто! pr = i div 2 (номер отца вершины равен номеру ребёнка, целочисленно делённому на 2). Это свойство обратно предыдущему, проверьте его самостоятельно.<br/>&nbsp;
+</p><p></p><p>Ну вот, на этом теория закончена. Теперь осталось научиться правильно реализовывать это всё на практике...
+</p><p>Сразу прейдём к коду и постепенно будут даваться объяснения.
+</p><p></p><p>Для начала объявим глобальные переменные:
+</p><p><div class="codedtop">С++ код:</div><div class="coded"><pre><code>#include &lt;stdio.h>
+
+const long int MaxV = 5000;
+
+long int a[MaxV];
+long int n,i;
+
+//Our heap variables
+long int heap[MaxV];
+long int nheap, tmp;
+</code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>const
+  MaxV=5000;
+var
+ a: array [1..MaxV] of longint;
+ n,i: longint;
+ {Our heap variables}
+ Heap: array [1..MaxV] of longint;
+ nheap, tmp: longint; </code></pre></div>
+</p><p>heap - основной массив нашей кучи; nheap - размер нашей кучи (количество элементов, находящихся на данный момент в куче);  a - массив для временного хранения элементов (он нужен лишь для примера работ с кучей); n - количество элементов, которые нужно считать (также нужно для примера); i - счётчик цикла; tmp - переменная, для временного хранения каких-либо данных.
+</p><p>Вот и прекрасно, ху ис ху разобрались, теперь научимся инициализировать кучу:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>void InitHeap(void){
+  nheap = 0;
+} </code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>procedure InitHeap;
+begin
+  nheap := 0;
+end; </code></pre></div>
+</p><p>Здесь ничего сложного нет - просто обнуляем текущее количество элементов. Если хотите - можно также сделать и обнуление всего массива кучи, но это не обязательно.
+</p><p>Теперь научимся добавлять элементы в кучу:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>void HeapAdd(long int x){
+  nheap++;
+  heap[nheap] = x;
+  MoveUp(nheap);
+} </code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>procedure HeapAdd(x: longint);
+begin
+  inc(nheap);
+  heap[nheap] := x;
+  MoveUp(nheap);
+end; </code></pre></div>
+</p><p>Сначала мы увеличиваем на 1 текущее количество элементов. Потом ложим на последнюю позицию элемент x.
+</p><p>Но ведь после того, как мы положили элемент куча может испортиться, т.е. вновь положенный элемент может быть "лучше" своего предка. В таком случае нам нужно исправить кучу. Для этого мы используем процедуру MoveUp. В неё передаётся номер добавленного элемента.
+</p><p>Как же должна работать MoveUp? Давайте рассуждать вместе! Для этого воспользуемся примером кучи:
+</p><p><center><pre>         ( 3 )       
+      /         \      
+    (5)          (5)    
+   /   \        /   \   
+ (6)   (5)    (6)   (7) 
+ / \   /  \   /  \  /   
+(9)(7)(10)(9)(6)(8)(9)  
+</pre></center>
+</p><p>Давайте попробуем добавить в эту кучу элемент 4. Для этого находим первую свободную позицию и присваиваем этой позиции значение 4. В данном случае номер этой позиции будет ранен 15 (у вершины 7 всего один ребёнок - 9. Свободная позиция - позиция второго ребёнка):
+</p><p><center><pre>         ( 3 )       
+       /       \      
+     (5)        (5)    
+    /   \       /   \   
+  (6)   (5)   (6)   (7) 
+  / \   /  \  /  \  /  \ 
+(9)(7)(10)(9)(6)(8)(9) {4}
+</pre></center>
+</p><p>Что мы делаем дальше? Правильно, сравниваем с отцом. В данном случае 4 лучше своего отца 7 (т.е. 4 < 7 ). В этом случае мы "поднимаем 4 выше", т.е. меняем с отцом:
+</p><p><center><pre>          ( 3 )       
+        /       \      
+     (5)         (5)    
+    /   \       /   \   
+  (6)   (5)   (6)   {4} 
+  / \   /  \  /  \  /  \ 
+(9)(7)(10)(9)(6)(8)(9) [7]
+</pre></center>
+</p><p>Дальше повторяем то же самое до тех пор, пока 4 не станет "хуже" своего отца:
+</p><p><center><pre>          ( 3 )       
+        /       \      
+     (5)         {4}    
+    /   \       /   \   
+  (6)   (5)   (6)   [5] 
+  / \   /  \  /  \  /  \ 
+(9)(7)(10)(9)(6)(8)(9) (7)
+</pre></center>
+</p><p>Т.е. меняем местами вершины со значениями 4 и 5. Опять сравниваем с отцом: 4 > 3, т.е. ребёнок (4) "хуже" своего предка (3). Останавливаемся. Вот как выглядит этот код:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>void MoveUp(long int ind){
+  long int k;
+  k = ind / 2;
+  if( ind > 1 ){
+    if( heap[ind] &lt; heap[k] ){
+      tmp = heap[ind];
+      heap[ind] = heap[k];
+      heap[k] = tmp;
+      MoveUp(k);
+    }
+  }
+} </code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>procedure MoveUp(ind: longint);
+var
+  k: longint;
+begin
+  k := ind div 2;
+  if ind > 1 then
+  begin
+    if heap[ind] &lt; heap[k] then
+    begin
+      tmp := heap[ind];
+      heap[ind] := heap[k];
+      heap[k] := tmp;
+      MoveUp(k);
+    end;
+  end;
+end; </code></pre></div>
+</p><p>Сначала узнаём номер вершины предка. Если ind < 2 то мы находимся в корне - т.е. нужно выходить, т.к. у него нет предка. Если номера ребёнка и предка корректны - сравниваем их. Если предок "хуже" ребёнка - меняем их местами и рекурсивно пытаемся пропихнуть вершину выше. Для обмена элементов местами использовалась глобальная переменная <i>tmp</i>. Её можно было сделать и локальной.
+</p><p></p><p>Часто нужно достать самый "лучший" элемент из кучи и работать дальше с ним. При этом чаще всего элемент назад не возвращается, а продолжать работать с кучей приходится. Для этого также нужно исправлять кучу. Вот код получения самого "лучшего" элемента и удаления его из кучи:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>long int ExtractMin(void){
+  long int value;
+  value = heap[1];
+  heap[1] = heap[nheap];
+  heap[nheap] = 0;
+  nheap--;
+  MoveDown(1);
+  return value;
+} </code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>function ExtractMin: longint;
+var
+  value: longint;
+begin
+  value := heap[1];
+  heap[1] := heap[nheap];
+  heap[nheap] := 0;
+  dec(nheap);
+  MoveDown(1);
+  ExtractMin := value;
+end; </code></pre></div>
+</p><p>Самый "лучший" элемент лежит на самой верхушке куче, т.е. является первым. Запоминаем его. Для того, чтобы кучу можно было восстановить, берём последний элемент и ложим его на 1 место. Теперь, чтобы исправить нашу кучу, нам нужно всего лишь опустить 1 элемент на нужное место. К сожалению, метод исправить кучу быстрее ещё не придуман, так что будем использовать этот. Процедура MoveDown очень похожа на MoveUp. Вот её код:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>void MoveDown(long int ind){
+  long int k;
+  k = ind * 2;
+  if(k &lt;= nheap){
+    if( (k+1 &lt;= nheap) &amp;& (heap[k] > heap[k+1]) ) k++;
+    if( heap[ind] > heap[k] ){
+      tmp = heap[ind];
+      heap[ind] = heap[k];
+      heap[k] = tmp;
+      MoveDown(k);
+    }
+  }
+} </code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>procedure MoveDown(ind: longint);
+var
+  k: longint;
+begin
+  k := ind*2;
+  if k &lt;= nheap then
+  begin
+    if (k+1 &lt;= nheap) and (heap[k] > heap[k+1]) then
+      k := k + 1;
+    if heap[ind] > heap[k] then
+    begin
+      tmp := heap[ind];
+      heap[ind] := heap[k];
+      heap[k] := tmp;
+      MoveDown(k);
+    end;
+  end;
+end; </code></pre></div> 
+</p><p>Рассмотрим её пошагово. k - номер первого ребёнка данной вершины. Если номер перевалил за количество элементов - выходим, иначе k - первый кандидат на всплывание. Из двух детей должен всплыть "лучший", иначе свойство кучи после всплывания не будет выполнятся. Из двух детей выбираем лучшего (по умолчанию - 1 ребёнок; если 2 его лучше - запоминаем его, увеличив k на 1). Теперь сравниваем кандидата на всплывание с предком. Если предок "хуже" ребёнка - меняем их местами и рекурсивно пытаемся опустить отца ещё ниже.
+</p><p>Ну вот и всё. Теперь вы умеете реализовывать все процедуры кучи. Сразу отмечу, что опускание/поднимание можно было сделать и не рекурсивно, а циклом. Но рекурсивное написание проще. Если Вы хотите писать бинарную как-то иначе, советую посмотреть вам и другие пособия.<br/>&nbsp;
+</p><p>А мы сейчас напишем программку-пример работы с кучей.
+</p><p>Как вы уже заметили, массив кучи нельзя назвать отсортированным. Многие примеры куч были таковыми, так что не думаю, что у кого-то останутся сомнения ;) (если не верите, попробуйте записать наши кучи в виде массивов и увидите, что они не отсортированы). Давайте отсортируем массив при помощи бинарной кучи. Известно, что в корне дерева кучи лежит самый "лучший" элемент, следовательно, последовательно забирая лучшие элементы мы получим отсортированный массив. А вот и код: 
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>void main(void){
+  InitHeap();
+  printf("Insert (N)umber of elements:\n");
+  scanf("%d",&amp;n);
+  printf("Insert array, please:\n");
+  for(i=0; i&lt;n; i++){
+    scanf("%d",&amp;tmp);
+    HeapAdd(tmp);
+  }
+  for(i=0; i&lt;n; i++){
+    a[i] = ExtractMin();
+  }
+  printf("Sorted array is:\n");
+  for(i=0; i&lt;n; i++) printf("%d ",a[i]);
+  printf("\n");
+  fflush(stdin);
+  getchar();
+}</code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code>begin
+  InitHeap;
+  writeln('Insert (N)umber of elements:');
+  readln(n);
+  writeln('Insert array, please:');
+  for i:=1 to n do
+  begin
+    Read(tmp);
+    HeapAdd(tmp);
+  end;
+  for i:=1 to n do
+    a[i] := ExtractMin;
+  writeln('Sorted array is:');
+  for i:=1 to n do
+    write(a[i], ' ');
+  writeln;
+  readln;
+end.</code></pre></div>
+</p><p>С самого начала мы инициализируем кучу. Потом считываем количество элементов массива, которые нужно будет считать. Дальше считываем массив и поэлементно заносим его в кучу. На самом деле массив нам здесь считывать не обязательно - можно просто считывать временную переменную и добавлять её значение в кучу. Т.е. данный момент кода можно заменить на:
+</p><p><div class="codedtop">C++ код:</div><div class="coded"><pre><code>  ...
+  for(i=0; i&lt;n; i++){
+    scanf("%d",&amp;a[i]);
+    HeapAdd(a[i]);
+  }
+  ...</code></pre></div>
+</p><p><div class="codedtop">Delphi код:</div><div class="coded"><pre><code> ...
+  for i:=1 to n do
+  begin
+    Read(a[i]);
+    HeapAdd(a[i]);
+  end;
+  ...</code></pre></div>
+</p><p>Дальше мы поэлементно достаём элементы из кучи в массив a и выводим уже отсортированный массив.
+</p><p>Как видите, ничего сложного нет. Теперь поговорим о скорости работы наших процедур:
+</p><p><b>InitHeap</b> - O(1), т.к. мы делаем всего одно действие - обнуляем текущее количество вершин.
+</p><p><b>MoveUp</b> - O(log N) - в самом худшем случае в куче уже будут лежать N элементов, и все они будут "хуже" нашего элемента - тогда нам нужно будет поднять элемент с самого низа до самого верха, т.е. совершить "количество уровней в данной куче" операций - это как раз и будет O(log N)...
+</p><p><b>MoveDown</b> - O(log N) - аналогично MoveUp, только элемент опускается.
+</p><p><b>HeapAdd</b> - O(log N) - добавление мы делаем за О(1), но поднятие элемента "стоит" O(log N) операций.
+</p><p><b>ExtractMin</b> - O(log N) - узнаём и удаляем элемент за О(1), но восстановление кучи требует O(log N) операций.<br/>&nbsp;
+</p><p></p><p>Теперь поговорим о полезности данного алгоритма. Задач типа "напишите структуру данных бинарная куча" почти не бывает. Однако есть огромное множество алгоритмов, к которым можно "прикрутить" бинарную кучу - мы с вами уже отсортировали массив с помощью бинарной кучи, хотя кучи по началу там даже видно не было. Вот ещё примеры алгоритмов, которые с бинарной кучей работают во много раз быстрее, чем без неё: алгоритм Дейкстры, Крускала, упорядоченное хранения данных и работа с ними, некоторые алгоритмы сжатия и т.д. На самом деле, бинарную кучу можно использовать почти везде, главное увидеть, как правильно в данной задаче использовать кучу и что в ней хранить.
+</p><p>Ну вот мы и разобрались, что же такое бинарная куча. Теперь если вас попросят "выйти к доске и сделать кучу" вы смело её сделаете! :D</p></p></div></div><br /><p class="plink"><a href="binary_heap+ru.pdf">Скачать в формате PDF</a> (137.3 kB)</p><h1 id="comments">Комментарии :</h1><div class="houter"><div class="hn"><div class="ht">20.02.2006 :.</div><div class="hh">.: XBE</div></div><div class="cont"><p>Ты предложил мне почитать эту статью. И предположил что будут интересны первые три абзаца а потом мол хрен поймешь... Ну уж нет. Я разобрался с четырьмя обзацами. Но самый интересный для меня абзац последний. И я считаю что абзац должен быть хотябы в два раза длинее. Т.е. полезность данного алгоритма для тебя очевидна?.. А для других НЕТ. Трудно придумать куда ещё впереть эту кучу? Нет значит придумай и допиши.   В начале статьи должно быть вступление. Маленький абзац о вселенском значении этой статьи и автора.   А саму идею кучи ты объяснишь мне при встрече.</p></div></div><div class="houter"><div class="hn"><div class="ht">20.02.2006 :.</div><div class="hh">.: DeXPeriX</div></div><div class="cont"><p><div class="qbor"><div class="qoun">XBE:</div><div class="qtext">Трудно придумать куда ещё впереть эту кучу?</div></div> Вообще-то, нет. Но сама бинарная куча может лишь ускорить другие алгоритмы, т.е. прикрутить её можно ко многим алгоритмам, но чаще всего я встречаюсь именно с этими.<div class="qbor"><div class="qoun">XBE:</div><div class="qtext">Т.е. полезность данного алгоритма для тебя очевидна?.. А для других НЕТ</div></div> Полезность - большое ускорение работы программ. Т.е. при помощи кучи ты можешь свести сложность работы с N<sup>2</sup> до N log N.<div class="qbor"><div class="qoun">XBE:</div><div class="qtext">В начале статьи должно быть вступление. Маленький абзац о вселенском значении этой статьи и автора. </div></div> Если так писать все статьи, то и статей не останется - одно &quot;вселенское&quot; значение! :D</p></div></div><h1 id="commentsform">Оставить комментарий:</h1><div class="houter"><div class="hn"><div class="hh">.: Оставить комментарий</div></div><div class="cont"><form method="post" name="comment_form" id="comment_form" action="http://dexperix.net/scripts/comment.php"><table border="0"><tr><td><input type="hidden" name="id" value="23" /><input type="hidden" name="uid" value="49" />Имя (ник):</td><td><input type="text" name="nick" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш ник или реальное имя. Будет показано в заголовке комментария )</small></td></tr><tr><td>E-Mail:</td><td><input type="text" name="mail" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Ваш e-mail. Используется только для связи с Вами администрации. Показан НЕ будет )</small></td></tr><tr><td>Сайт, ICQ или Jabber:</td><td><input type="text" name="site" size="40" maxlength="35" /></td></tr><tr><td colspan="2"><small>( Это поле будет отображено в заголовке комментария рядом с Вашим именем )</small></td></tr><tr><td>Ваша оценка:</td><td><select name="rathing" size="1"><option value="0" selected="selected">Нет оценки</option><option value="1">Ужасно</option><option value="2">Плохо</option><option value="3">Нормально</option><option value="4">Хорошо</option><option value="5">Отлично</option></select></td></tr><tr><td colspan="2"><small>( Как Вы оцениваете данный материал? По умолчанию оценка не ставится )</small></td></tr><tr><td colspan="2">Введите число, изображённое на картинке <img src="http://dexperix.net/scripts/image.php?id=23" width="90" height="30" align="middle" class="captcha" alt="image" /> : <input type="text" name="captcha" size="8" maxlength="7" /></td></tr><tr><td colspan="2">Текст комментария:</td></tr><tr><td colspan="2" align="center"><textarea name="text" rows="12" cols="90"></textarea><br /><input type="submit" value="Оправить комментарий" /></td></tr></table></form></div></div><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t24.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: showed number of visiters"+
+" today' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet--><!-- MyCounter v.2.0 -->
+<script type="text/javascript"><!--
+my_id = 3456;
+my_width = 69;
+my_height = 14;
+my_alt = "MyCounter - Ваш счётчик";
+//--></script>
+<script type="text/javascript"
+  src="http://scripts.mycounter.com.ua/counter2.0.js">
+  </script><noscript>
+<div>  <a href="http://mycounter.com.ua/"><img
+  src="http://get.mycounter.com.ua/counter.php?id=3456"
+  title="MyCounter - Ваш счётчик"
+  alt="MyCounter - Ваш счётчик"
+  width="69" height="14" /></a></div></noscript>
+</div><div id="footinfo"><a href="http://validator.w3.org/check/referer">Valid XHTML 1.0 Transitional</a> &nbsp; <a href="http://jigsaw.w3.org/css-validator/validator">Valid CSS</a></div><div id="footer">COPYRIGHT © 2005-2009 DeXPeriX</div></div></div></body></html>

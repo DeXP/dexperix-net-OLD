@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>DeXPeriX Home Page : Статьи > Хакинг</title>
+		<link>http://dexperix.net</link>
+		<description>Статьи по хакингу, фрикингу, резёрвингу, крэкингу и защите от всего этого. Здесь же можно найти статьи по "хаку без хака", т.е. о лёгком взломе. Так же именно здесь вы можете почитать статьи о веб-взломе и хакингу ICQ.</description>
+		<language>ru</language>
+		<lastBuildDate>Sun, 25 May 2008 15:26:04 +0300</lastBuildDate>
+
+		<pubDate>Sun, 25 May 2008 15:26:04 +0300</pubDate>
+		<docs>http://dexperix.net</docs>
+		<item>
+			<title>Защита сайта от взлома</title>
+			<pubDate>Sun, 26 Feb 2006 00:00:00 +0300</pubDate>
+			<link>anti_web_hack+npi+ru.html</link>
+			<guid>anti_web_hack+npi+ru.html</guid>
+			<description><![CDATA[В этой статье рассмотрены основные способы взлома сайтов и защиты от них. Также вы узнаете, как можно применять социальную инженерию для защиты от взлома.
+</p><p>Если вы хотите, чтобы ваше защита имела действительно параноидальный уровень - читайте эту статью.]]></description>		</item>
+		<item>
+			<title>Крэк без крэка или использование The Customizer</title>
+			<pubDate>Sun, 20 Dec 2005 00:00:00 +0300</pubDate>
+			<link>crack_no_crack+npi+ru.html</link>
+			<guid>crack_no_crack+npi+ru.html</guid>
+			<description><![CDATA[Вы хотите научиться взламывать программы, но не хотите учить аcсемблер? Всегда пожалуйста! В данной статье вы научитесь легко взламывать многие программы без долгой и изнурительной подготовки.]]></description>		</item>
+	</channel>
+</rss>
