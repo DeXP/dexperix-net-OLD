@@ -342,3 +342,7 @@ A.butmenulink:hover {
 .number {
 	color: #ccc;
 }
+
+#comment_form, #commentsform {
+	display: none;
+}

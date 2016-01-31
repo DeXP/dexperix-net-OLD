@@ -679,4 +679,6 @@ height:640px;
 }
 /***	end footer ***/
 
-
+#comment_form, #commentsform {
+	display: none;
+}

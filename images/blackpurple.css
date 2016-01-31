@@ -403,3 +403,7 @@ text-decoration:none;
 img,.preview {
 border:0;
 }
+
+#comment_form, #commentsform {
+	display: none;
+}
